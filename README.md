@@ -13,7 +13,7 @@ Esta aplicación será implementada en el lenguaje JavaScript
 
 ## Documentación
 
-Justificación de las herramientas: [herramientas.md](https://github.com/Megatorpon/Apus/docs/herramientas.md)
+Justificación de las herramientas: [herramientas.md](https://github.com/Megatorpon/Apus/blob/main/docs/herramientas.md)
 
 
-Configuración de git: [config_git.md](https://github.com/Megatorpon/Apus/docs/config_git.md)
+Configuración de git: [config_git.md](https://github.com/Megatorpon/Apus/blob/main/docs/config_git.md)
