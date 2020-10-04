@@ -1,6 +1,7 @@
 Para la configuración de git en la máquina local, se usaron las siguientes dos órdenes:
 
 Configuración del nombre: **git config --global user.name "Megatorpon"**
+
 Configuración del email: **git config --global user.email "ccppabloperez@gmail.com"**
 
 
