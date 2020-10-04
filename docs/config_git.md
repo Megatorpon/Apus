@@ -14,4 +14,4 @@ Luego de escribir la anterior orden por consola, se ha establecido la contraseñ
 En la siguiente imagen, se puede observar lo anteriormente mencionado.
 
 
-![Configuracion] (https://github.com/Megatorpon/Apus/docs/img/git_config.png)
+![Configuracion] (https://github.com/Megatorpon/Apus/blob/main/docs/img/config-git.png)
