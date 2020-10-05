@@ -3,7 +3,7 @@ Proyecto de la asignatura Infraestructura Virtual de 4º curso de Ingeniería In
 
 ## Descripción de la aplicación
 
-Apus es una aplicación que permitirá al usuario registrar las rutinas y los ejercicios de estas que vaya a llevar a cabo en su entrenamiento. Además de ello, permite registrar los datos que interesen sobre estos ejercicios (de esta forma, el usuario tendrá la posibilidad de observar su progreso a lo largo de los días) y, aparte, una sección de dietas en la que apuntar los alimentos a consumir en cada comida.
+Apus es una aplicación que permitirá al usuario registrar las rutinas y los ejercicios de estas que vaya a llevar a cabo en su entrenamiento. Además de ello, permite registrar diferentes metas de estos ejercicios (de esta forma tendrá la posibilidad de observar su progreso a lo largo de los días)
 
 
 ## Herramientas
