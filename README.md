@@ -8,7 +8,7 @@ Apus es una aplicación que permitirá al usuario registrar las rutinas y los ej
 
 ## Herramientas
 
-Esta aplicación será implementada en el lenguaje JavaScript
+Para la implementación de esta aplicación se utilizará Node.js
 
 
 ## Documentación

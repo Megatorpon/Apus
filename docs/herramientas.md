@@ -1,1 +1,1 @@
-Para este proyecto he decidido utilizar Javascript porque últimamente me ha llamado la atención aprenderlo debido a la utilidad que tiene, además de que algunos compañeros me lo han recomendado mucho y creo que esta es una buena oportunidad para ello.
+Para este proyecto he decidido utilizar Node.js porque he oído muy buenas opiniones sobre él y me parece que este proyecto es una buena oportunidad para conocerlo bien y aprender a utilizarlo.
