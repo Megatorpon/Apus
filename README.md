@@ -10,7 +10,11 @@ Apus es una aplicación que permitirá al usuario registrar las rutinas y los ej
 
 ## Herramientas
 
-Para la implementación de esta aplicación se utilizará Node.js
+Lenguaje utilizado: Node.js
+
+Framework: Meteor.js
+
+Sistema de base de datos: MongoDB
 
 
 ## Documentación
