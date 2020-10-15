@@ -12,14 +12,30 @@ Apus quiere ofrecer una experiencia muy completa para aquellos que sean aficiona
 
 ## Herramientas
 
-Lenguaje utilizado: Node.js
+<ul>
+<li>Lenguaje utilizado en el proyecto: **Node.js**</li>
+<li>Framework: **Meteor.js**</li>
+<li>Sistema de base de datos: **MongoDB**</li>
+</ul>
 
-Framework: Meteor.js
-
-Sistema de base de datos: MongoDB
+Si desea saber más información del porqué de estas herramientas, visite el apartado **Información adicional**
 
 
-## Documentación
+## Progreso de milestones
+
+En el siguiente enlace se encuentran los pasos realizados en cada uno de los milestones hasta el momento.
+
+
+## Historias de usuario
+
+[HU01](https://github.com/Megatorpon/Apus/issues/4) - Añadir rutinas
+
+[HU02](https://github.com/Megatorpon/Apus/issues/5) - Consultar dieta recomendada
+
+[HU03](https://github.com/Megatorpon/Apus/issues/6) - Obtener gráfica de progreso
+
+
+## Información adicional
 
 ¿Por qué he elegido las anteriores herramientas? --> [Pincha aquí](https://github.com/Megatorpon/Apus/blob/main/docs/herramientas.md)
 
@@ -27,15 +43,8 @@ Sistema de base de datos: MongoDB
 Configuración inicial de git --> [Pincha aquí](https://github.com/Megatorpon/Apus/blob/main/docs/config_git.md)
 
 
+## Autor
+
+**Pablo Pérez Méndez**
 
 
-
-
-
-
-
-
-
-Muchas veces me ha pasado de estar en el gimnasio entrenando mientras sigo una rutina e ir apuntando en el bloc de notas del móvil cada día que voy los progresos que voy haciendo en cada ejercicio. Es algo que me resulta bastante incómodo puesto que además de que no se ve bonito, es bastante más díficil ir apuntando cada uno de los días, los pesos levantados, etc.
-
-Apus es una aplicación que permitirá al usuario registrar las rutinas y los ejercicios de estas que vaya a llevar a cabo en su entrenamiento. Además de ello, le permitirá registrar las diferentes metas de estos ejercicios a las que llega cada día (de esta manera tendrá la posibilidad de tener un progreso continuado y observar cómo va mejorando con el paso del tiempo)
