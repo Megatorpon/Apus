@@ -7,7 +7,7 @@ Como cliente de gimnasio que he sido durante bastantes años siempre he tenido q
 
 El proyecto Apus consiste en una aplicación en la que poder tener todo lo anteriormente mencionado en un mismo lugar, de forma que sea mucho más cómodo consultar toda la información relacionada con el entrenamiento. Además, habrá otras funcionalidades muy prácticas como el obtener rutinas/dietas nuevas dependiendo de en lo que el usuario decida enfocarse, si es que no tiene ninguna o quiere variar, el visualizar su progreso de forma gráfica, el compartir este último con otros usuarios, etc.
 
-Apus quiere ofrecer una experiencia muy completa para aquellos que sean aficionados al gimnasio.
+Apus quiere ofrecer una experiencia muy completa para aquellos que sean aficionados al gimnasio. 
 
 
 ## Herramientas
