@@ -43,7 +43,6 @@ En el siguiente enlace se encuentran los pasos realizados en cada uno de los mil
 
 ¿Por qué he elegido las anteriores herramientas? --> [Pincha aquí](https://github.com/Megatorpon/Apus/blob/main/docs/herramientas.md)
 
-
 Configuración inicial de git --> [Pincha aquí](https://github.com/Megatorpon/Apus/blob/main/docs/config_git.md)
 
 
