@@ -13,9 +13,9 @@ Apus quiere ofrecer una experiencia muy completa para aquellos que sean aficiona
 ## Herramientas
 
 <ul>
-<li>Lenguaje utilizado en el proyecto: **Node.js**</li>
-<li>Framework: **Meteor.js**</li>
-<li>Sistema de base de datos: **MongoDB**</li>
+<li>Lenguaje del proyecto: **Node.js**</li>
+<li>Framework utilizado: **Meteor.js**</li>
+<li>Sistema de base de datos utilizado: **MongoDB**</li>
 </ul>
 
 Si desea saber más información del porqué de estas herramientas, visite el apartado **Información adicional**
@@ -24,6 +24,8 @@ Si desea saber más información del porqué de estas herramientas, visite el ap
 ## Progreso de milestones
 
 En el siguiente enlace se encuentran los pasos realizados en cada uno de los milestones hasta el momento.
+
+[Pincha aquí](https://github.com/Megatorpon/Apus/blob/main/docs/pasos.md)
 
 
 ## Historias de usuario
