@@ -13,11 +13,11 @@ Apus quiere ofrecer una experiencia muy completa para aquellos que sean aficiona
 ## Herramientas
 
 <ul>
-<li>Lenguaje del proyecto: Node.js</li>
+<li>Lenguaje del proyecto/Entorno de ejecución: Javascript/Node.js</li>
 
-<li>Framework utilizado: Meteor.js</li>
+<li>Framework utilizado: Express.js</li>
 
-<li>Sistema de base de datos utilizado: MongoDB</li>
+<li>Sistema de base de datos utilizado: Probablemente MongoDB</li>
 </ul>
 
 Si desea saber más información del porqué de estas herramientas, visite el apartado **Información adicional**
