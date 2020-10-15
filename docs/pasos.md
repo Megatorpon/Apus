@@ -18,3 +18,20 @@
 
 ## Hito 1 - Estructura general del proyecto
 
+<ol>
+<li>Elección de las herramientas a utilizar en el proyecto (plasmar en Readme.md)</li>
+<li>Añadir fichero herramientas.md a la carpeta "docs"</li>
+<li>Justificar la elección de las herramientas (herramientas.md) y enlazar con Readme.md</li>
+<li>Creación de milestones del proyecto</li>
+<li>Creación de issues relacionadas con los milestones</li>
+<li>Creación de historias de usuario (también son issues)</li>
+<li>Enlazar todo lo anterior con el Readme.md</li>
+<li>Creación de la carpeta src</li>
+<li>Establecer una estructura inicial para el proyecto en javascript</li>
+<li>Creación de fichero iv.yaml en la raíz del repositorio</li>
+<li>Plasmar en el fichero iv.yaml las clases/módulos creados</li>
+<li>Crear un fichero pasos.md en la carpeta "docs"</li>
+<li>Establecer en él los pasos seguidos en los hitos 0 e 1</li>
+<li>Enlazar el fichero pasos.md al Readme.md</li>
+<li>Abrir PR y entregar hito 1</li>
+</ol>
