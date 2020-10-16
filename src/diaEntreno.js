@@ -23,3 +23,4 @@ export default class DiaEntreno {
 		this.completado = true;
 	}
 }
+
