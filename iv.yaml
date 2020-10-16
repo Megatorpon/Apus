@@ -1,1 +1,3 @@
-entidad: src/user.js
+entidad: src/rutina.js
+entidad: src/diaEntreno.js
+entidad: src/ejercicio.js

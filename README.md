@@ -39,7 +39,16 @@ En el siguiente enlace se encuentran los pasos realizados en cada uno de los mil
 [HU03](https://github.com/Megatorpon/Apus/issues/6) - Obtener gráfica de progreso
 
 
+## Issues
+
+El siguiente enlace le llevará a la pestaña de "issues", donde podrá observar aquellos que se han completado y aquellos que aún siguen abiertos:
+
+[Issues](https://github.com/Megatorpon/Apus/issues)
+
+
 ## Código fuente
+
+Pinchando a continuación, se moverá a la carpeta donde yacen todos los ficheros fuente del proyecto:
 
 [Ficheros src](https://github.com/Megatorpon/Apus/blob/main/src)
 
