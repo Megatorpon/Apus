@@ -43,7 +43,7 @@ En el siguiente enlace se encuentran los pasos realizados en cada uno de los mil
 
 El siguiente enlace le llevará a la pestaña de "issues", donde podrá observar aquellos que se han completado y aquellos que aún siguen abiertos:
 
-[Issues](https://github.com/Megatorpon/Apus/issues)
+[Lista de issues](https://github.com/Megatorpon/Apus/issues)
 
 
 ## Código fuente
