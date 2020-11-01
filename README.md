@@ -53,6 +53,13 @@ Pinchando a continuación, se moverá a la carpeta donde yacen todos los fichero
 [Ficheros src](https://github.com/Megatorpon/Apus/blob/main/src)
 
 
+## Tests
+
+Utilizando Jest, se han desarrollado tests para revisar el correcto funcionamiento de las clases implementadas:
+
+[Clase Rutina](https://github.com/Megatorpon/Apus/blob/main/tests/rutina.test.js) --> [Ejemplo](https://github.com/Megatorpon/Apus/blob/main/docs/test_Rutina.md)
+
+
 ## Información adicional
 
 ¿Por qué he elegido las anteriores herramientas? --> [Pincha aquí](https://github.com/Megatorpon/Apus/blob/main/docs/herramientas.md)
