@@ -1,0 +1,28 @@
+{
+  "name": "apus",
+  "version": "1.0.0",
+  "description": "Application for exercise routines",
+  "main": "./src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Megatorpon/Apus.git"
+  },
+  "author": "Pablo Perez Mendez",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Megatorpon/Apus/issues"
+  },
+  "homepage": "https://github.com/Megatorpon/Apus#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.1"
+  }
+}
