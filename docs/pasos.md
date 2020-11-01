@@ -35,3 +35,44 @@
 <li>Enlazar el fichero pasos.md al Readme.md</li>
 <li>Abrir PR y entregar hito 1</li>
 </ol>
+
+## Hito 2 - Tests
+
+En este hito se introducen los tests unitarios en el proyecto, además de la automatización de estos, para asegurarnos de que nuestro código funciona correctamente 
+y hace lo que tiene que hacer. Para ello (y en general para trabajar con el proyecto), hemos comenzado a instalar las herramientas que usaremos a lo largo del curso, 
+empezando por el gestor de paquetes npm, haciendo uso de la orden:
+
+`sudo apt install npm`
+
+Tras esto, se ha lanzado el comando `npm init` con el que hemos configurado un archivo package.json y añadido una carpeta para los módulos necesarios para el proyecto.
+
+Como se ha explicado anteriormente, el framework de tests que se ha escogido es Jest, el cual se ha establecido como dependencia de desarrollo en el package.json con:
+
+`npm install --save-dev jest`
+
+
+Como base para este hito, se ha decidido completar las clases ya creadas anteriormente (Rutina, DiaEntreno y Ejercicio), las cuales están relacionadas entre sí para avanzar
+en la compleción de la [HU01](https://github.com/Megatorpon/Apus/issues/4). Se ha creado una clase con la que el usuario podrá añadir una rutina a su cuenta, a la cual a su 
+vez podrá añadirle varios días de entrenamiento y ejercicios a estos últimos. Lo que querremos testear a través del fichero Rutina.test.js es, como el propio nombre 
+indica, la clase Rutina. Con ello se revisará que todos los métodos que tenga ya implementados esta clase funcionen correctamente. Los métodos, que abarcan la historia de 
+usuario anteriormente mencionada (poder añadir/modificar/eliminar rutinas), son sencillos pero suficientes por ahora. A medida que avance el proyecto se irán completando con
+más funcionalidades (por ejemplo, a la hora de guardar la información en la base de datos).
+
+Las issues que se han añadido en este hito del proyecto son las siguientes:
+
+[Elección de framework de testing y justificación](https://github.com/Megatorpon/Apus/issues/17)
+[Elección de gestor de tareas y justificación](https://github.com/Megatorpon/Apus/issues/18)
+[Completar la clase rutina](https://github.com/Megatorpon/Apus/issues/20)
+[Crear tests unitarios para la clase Rutina](https://github.com/Megatorpon/Apus/issues/21)
+[Elección de gestor de versiones y justificación](https://github.com/Megatorpon/Apus/issues/23)
+[Actualizar pasos hito 2]((https://github.com/Megatorpon/Apus/issues/24)
+[Actualizar Readme](https://github.com/Megatorpon/Apus/issues/26)
+
+Además de ello, se han añadido nuevas historias de usuario y actualizado el nombre de las anteriores:
+
+[HU01 - Como usuario, quiero poder añadir una rutina completamente personalizada por mí](https://github.com/Megatorpon/Apus/issues/4)
+[HU02 - Como usuario, quiero poder obtener una dieta recomendada teniendo en cuenta mi condición física y mis objetivos](https://github.com/Megatorpon/Apus/issues/5)
+[HU03 - Como usuario, quiero poder obtener una gráfica en la que pueda observar mi progreso hasta hoy](https://github.com/Megatorpon/Apus/issues/6)
+[HU04 - Como usuario, quiero que se me recomiende una rutina según mis objetivos físicos](https://github.com/Megatorpon/Apus/issues/19)
+[HU05 - Como usuario, quiero poder establecerle una dieta personalizada a una rutina añadida anteriormente](https://github.com/Megatorpon/Apus/issues/22)
+
