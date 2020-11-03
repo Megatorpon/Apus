@@ -32,11 +32,15 @@ En el siguiente enlace se encuentran los pasos realizados en cada uno de los mil
 
 ## Historias de usuario
 
-[HU01](https://github.com/Megatorpon/Apus/issues/4) - Añadir rutinas
+[HU01](https://github.com/Megatorpon/Apus/issues/4) - Como usuario, quiero poder añadir una rutina completamente personalizada por mí.
 
-[HU02](https://github.com/Megatorpon/Apus/issues/5) - Consultar dieta recomendada
+[HU02](https://github.com/Megatorpon/Apus/issues/5) - Como usuario, quiero poder obtener una dieta recomendada teniendo en cuenta mi condición física y mis objetivos.
 
-[HU03](https://github.com/Megatorpon/Apus/issues/6) - Obtener gráfica de progreso
+[HU03](https://github.com/Megatorpon/Apus/issues/6) - Como usuario, quiero poder obtener una gráfica en la que pueda observar mi progreso hasta hoy.
+
+[HU04](https://github.com/Megatorpon/Apus/issues/19) - Como usuario, quiero que se me recomiende una rutina según mis objetivos físicos.
+
+[HU05](https://github.com/Megatorpon/Apus/issues/22) - Como usuario, quiero poder establecerle una dieta personalizada a una rutina añadida anteriormente.
 
 
 ## Issues
@@ -58,6 +62,7 @@ Pinchando a continuación, se moverá a la carpeta donde yacen todos los fichero
 Utilizando Jest, se han desarrollado tests para revisar el correcto funcionamiento de las clases implementadas:
 
 [Clase Rutina](https://github.com/Megatorpon/Apus/blob/main/tests/rutina.test.js) --> [Ejemplo](https://github.com/Megatorpon/Apus/blob/main/docs/test_Rutina.md)
+Tanto la clase desarrollada como el test corresponden a la historia de usuario [HU01](https://github.com/Megatorpon/Apus/issues/4)
 
 
 ## Información adicional
