@@ -66,7 +66,7 @@ Las issues que se han añadido en este hito del proyecto son las siguientes:
 [Completar la clase rutina](https://github.com/Megatorpon/Apus/issues/20)<br>
 [Crear tests unitarios para la clase Rutina](https://github.com/Megatorpon/Apus/issues/21)<br>
 [Elección de gestor de versiones y justificación](https://github.com/Megatorpon/Apus/issues/23)<br>
-[Actualizar pasos hito 2]((https://github.com/Megatorpon/Apus/issues/24)<br>
+[Actualizar pasos hito 2](https://github.com/Megatorpon/Apus/issues/24)<br>
 [Actualizar Readme](https://github.com/Megatorpon/Apus/issues/26)<br>
 
 
