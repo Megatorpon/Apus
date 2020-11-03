@@ -60,19 +60,24 @@ más funcionalidades (por ejemplo, a la hora de guardar la información en la ba
 
 Las issues que se han añadido en este hito del proyecto son las siguientes:
 
-[Elección de framework de testing y justificación](https://github.com/Megatorpon/Apus/issues/17)
-[Elección de gestor de tareas y justificación](https://github.com/Megatorpon/Apus/issues/18)
-[Completar la clase rutina](https://github.com/Megatorpon/Apus/issues/20)
-[Crear tests unitarios para la clase Rutina](https://github.com/Megatorpon/Apus/issues/21)
-[Elección de gestor de versiones y justificación](https://github.com/Megatorpon/Apus/issues/23)
-[Actualizar pasos hito 2]((https://github.com/Megatorpon/Apus/issues/24)
-[Actualizar Readme](https://github.com/Megatorpon/Apus/issues/26)
+<ul>
+<li>[Elección de framework de testing y justificación](https://github.com/Megatorpon/Apus/issues/17)</li>
+<li>[Elección de gestor de tareas y justificación](https://github.com/Megatorpon/Apus/issues/18)</li>
+<li>[Completar la clase rutina](https://github.com/Megatorpon/Apus/issues/20)</li>
+<li>[Crear tests unitarios para la clase Rutina](https://github.com/Megatorpon/Apus/issues/21)</li>
+<li>[Elección de gestor de versiones y justificación](https://github.com/Megatorpon/Apus/issues/23)</li>
+<li>[Actualizar pasos hito 2]((https://github.com/Megatorpon/Apus/issues/24)</li>
+<li>[Actualizar Readme](https://github.com/Megatorpon/Apus/issues/26)</li>
+</ul>
+
 
 Además de ello, se han añadido nuevas historias de usuario y actualizado el nombre de las anteriores:
 
-[HU01 - Como usuario, quiero poder añadir una rutina completamente personalizada por mí](https://github.com/Megatorpon/Apus/issues/4)
-[HU02 - Como usuario, quiero poder obtener una dieta recomendada teniendo en cuenta mi condición física y mis objetivos](https://github.com/Megatorpon/Apus/issues/5)
-[HU03 - Como usuario, quiero poder obtener una gráfica en la que pueda observar mi progreso hasta hoy](https://github.com/Megatorpon/Apus/issues/6)
-[HU04 - Como usuario, quiero que se me recomiende una rutina según mis objetivos físicos](https://github.com/Megatorpon/Apus/issues/19)
-[HU05 - Como usuario, quiero poder establecerle una dieta personalizada a una rutina añadida anteriormente](https://github.com/Megatorpon/Apus/issues/22)
+<ul>
+<li>[HU01 - Como usuario, quiero poder añadir una rutina completamente personalizada por mí](https://github.com/Megatorpon/Apus/issues/4)</li>
+<li>[HU02 - Como usuario, quiero poder obtener una dieta recomendada teniendo en cuenta mi condición física y mis objetivos](https://github.com/Megatorpon/Apus/issues/5)</li>
+<li>[HU03 - Como usuario, quiero poder obtener una gráfica en la que pueda observar mi progreso hasta hoy](https://github.com/Megatorpon/Apus/issues/6)</li>
+<li>[HU04 - Como usuario, quiero que se me recomiende una rutina según mis objetivos físicos](https://github.com/Megatorpon/Apus/issues/19)</li>
+<li>[HU05 - Como usuario, quiero poder establecerle una dieta personalizada a una rutina añadida anteriormente](https://github.com/Megatorpon/Apus/issues/22)</li>
+</ul>
 
