@@ -1,3 +1,8 @@
-entidad: src/rutina.js
-entidad: src/diaEntreno.js
-entidad: src/ejercicio.js
+entidad: 
+	-src/rutina.js
+	-src/diaEntreno.js
+	-src/ejercicio.js
+lenguaje: javascript
+test:
+	-tests/rutina.test.js
+taskfile: package.json
