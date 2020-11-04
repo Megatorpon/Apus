@@ -1,8 +1,8 @@
 entidad: 
-	-src/rutina.js
-	-src/diaEntreno.js
-	-src/ejercicio.js
+  - src/rutina.js
+  - src/diaEntreno.js
+  - src/ejercicio.js
 lenguaje: javascript
 test:
-	-tests/rutina.test.js
+  - tests/rutina.test.js
 taskfile: package.json
