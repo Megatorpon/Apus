@@ -2,6 +2,7 @@ entidad:
   - src/rutina.js
   - src/diaEntreno.js
   - src/ejercicio.js
+  - src/index.js
 lenguaje: javascript
 test:
   - tests/rutina.test.js
