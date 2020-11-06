@@ -18,6 +18,14 @@ Apus quiere ofrecer una experiencia muy completa para aquellos que sean aficiona
 <li>Framework utilizado: Express.js</li>
 
 <li>Sistema de base de datos utilizado: Probablemente MongoDB</li>
+
+<li>Testing Framework (y librería de aserciones): Jest</li>
+
+<li>Gestor de tareas: Grunt</li>
+
+<li>Gestor de paquetes: npm</li>
+
+<li>Gestor de versiones: nvm</li>
 </ul>
 
 Si desea saber más información del porqué de estas herramientas, visite el apartado **Información adicional**
@@ -57,12 +65,25 @@ Pinchando a continuación, se moverá a la carpeta donde yacen todos los fichero
 [Ficheros src](https://github.com/Megatorpon/Apus/blob/main/src)
 
 
-## Tests
+## Tests y cómo ejecutarlos
 
-Utilizando Jest, se han desarrollado tests para revisar el correcto funcionamiento de las clases implementadas:
+Como se ha visto en el apartado herramientas, para la creación y configuración de tests para nuestra aplicación se ha usado Jest.
 
+Las clases testeadas hasta ahora son las siguientes, junto con un ejemplo de la información devuelta:
 [Clase Rutina](https://github.com/Megatorpon/Apus/blob/main/tests/rutina.test.js) --> [Ejemplo](https://github.com/Megatorpon/Apus/blob/main/docs/test_Rutina.md)
-Tanto la clase desarrollada como el test corresponden a la historia de usuario [HU01](https://github.com/Megatorpon/Apus/issues/4)
+
+
+Las instrucciones para testear nuestro código son simples. Una vez clonado el repositorio, nos iremos al directorio raíz de este y ejecutaremos en consola el siguiente comando:
+
+`npm install`
+
+Con este comando, instalaremos todas las dependencias listadas en el archivo `package.json`, incluidas las "dev-dependencies". A continuación, ejecutaremos el siguiente comando:
+
+`grunt test`
+
+que ejecutará la tarea asociada a ese comando en el [Gruntfile.js](https://github.com/Megatorpon/Apus/blob/main/Gruntfile.js), siendo en este caso el comando `npm run test`.
+Este comando ejecuta los tests guardados en la carpeta [tests](https://github.com/Megatorpon/Apus/blob/main/tests) por medio de la orden Jest. Finalmente, se listarán por consola los resultados
+de los tests ejecutados.
 
 
 ## Información adicional
