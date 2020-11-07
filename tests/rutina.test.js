@@ -15,6 +15,36 @@ describe("Testing class Rutina", () => {
     });
   });
 
+  describe("Testing getters", () => {
+    describe("Testing method getNombre()", () => {
+      test("Se obtiene el nombre de la rutina", () => {
+          nombre = rutin.getNombre();
+          expect(nombre).toBe(rutin.nombre);
+      });
+    });
+
+    describe("Testing method getTipo()", () => {
+      test("Se obtiene el tipo de la rutina", () => {
+          tipo = rutin.getTipo();
+          expect(tipo).toBe(rutin.tipo);
+      });
+    });
+
+    describe("Testing method getTrainingDays()", () => {
+      test("Se obtiene los días de entrenamiento de la rutina", () => {
+          training_days = rutin.getTrainingDays();
+          expect(training_days).toStrictEqual(rutin.training_days);
+      });
+    });
+
+    describe("Testing method getNumDias()", () => {
+      test("Se obtiene el numero de dias de entrenamiento de la rutina", () => {
+          num_days = rutin.getNumDias();
+          expect(num_days).toBe(rutin.num_days);
+      });
+    });
+  });
+
   describe("Testing method agregaDiaEntreno(numero_dia)", () => {
     test("Se agrega un dia de entrenamiento correctamente", () =>{
       rutin.agregaDiaEntreno(0); // Agregamos el día lunes
