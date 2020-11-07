@@ -34,10 +34,19 @@ class Rutina {
 		return this.training_days;
 	}
 
+	setTrainingDays(training_days){
+		this.training_days = training_days;
+	}
+
 	getNumDias(){
 		return this.num_days;
 	}
 
+	setNumDias(num_dias){
+		this.num_days = num_dias;
+	}
+
+	
 	agregaDiaEntreno(numero_dia){
 		let nuevo_dia = new diaEntreno(numero_dia);
 		this.training_days.push(nuevo_dia);

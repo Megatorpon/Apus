@@ -31,16 +31,75 @@ describe("Testing class Rutina", () => {
     });
 
     describe("Testing method getTrainingDays()", () => {
-      test("Se obtiene los días de entrenamiento de la rutina", () => {
+      test("Se obtienen los días de entrenamiento de la rutina", () => {
           training_days = rutin.getTrainingDays();
           expect(training_days).toStrictEqual(rutin.training_days);
       });
     });
 
     describe("Testing method getNumDias()", () => {
-      test("Se obtiene el numero de dias de entrenamiento de la rutina", () => {
+      test("Se obtiene el número de días de entrenamiento de la rutina", () => {
           num_days = rutin.getNumDias();
           expect(num_days).toBe(rutin.num_days);
+      });
+    });
+  });
+
+  describe("Testing setters", () => {
+    new_rutin = new Rutina();
+
+    describe("Testing method setNombre()", () => {
+
+      new_rutin.setNombre("Primera rutina")
+      test("Se comprueba que el nombre sea de tipo string", () => {
+          expect(typeof new_rutin.nombre).toBe('string');
+      });
+
+      test("Se añade el nombre correctamente", () => {
+          expect(new_rutin.nombre).toBe("Primera rutina");
+      });
+    });
+
+    describe("Testing method setTipo()", () => {
+
+      new_rutin.setTipo("Calistenia")
+      test("Se comprueba que el tipo sea un string", () => {
+          expect(typeof new_rutin.tipo).toBe('string');
+      });
+
+      test("Se añade el tipo correctamente", () => {
+          expect(new_rutin.tipo).toBe("Calistenia");
+      });
+    });
+
+    describe("Testing method setTrainingDays()", () => {
+
+      tr_days = [];
+      train_day_1 = new DiaEntreno(2);
+      train_day_2 = new DiaEntreno(4);
+      tr_days.push(train_day_1);
+      tr_days.push(train_day_2);
+      new_rutin.setTrainingDays(tr_days);
+
+      test("Se comprueba que el argumento sea un vector de diaEntreno", () => {
+          expect(new_rutin.getTrainingDays()[0]).toBeInstanceOf(DiaEntreno);
+          expect(new_rutin.getTrainingDays()[1]).toBeInstanceOf(DiaEntreno);
+      });
+
+      test("Se añade los dias de entrenamiento correctamente", () => {
+          expect(new_rutin.training_days).toStrictEqual(tr_days);
+      });
+    });
+
+    describe("Testing method setNumDias()", () => {
+      new_rutin.setNumDias(2);
+
+      test("Se comprueba que el argumento sea un numero", () => {
+        expect(typeof new_rutin.num_days).toBe('number');
+      });
+
+      test("Se añade el número de días correctamente", () => {
+        expect(new_rutin.num_days).toBe(2);
       });
     });
   });
