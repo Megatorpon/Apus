@@ -6,4 +6,4 @@ entidad:
 lenguaje: javascript
 test:
   - tests/rutina.test.js
-taskfile: package.json
+taskfile: Gruntfile.js
