@@ -94,7 +94,7 @@ describe("Testing class Rutina", () => {
     describe("Testing method setNumDias()", () => {
       new_rutin.setNumDias(2);
 
-      test("Se comprueba que el argumento sea un numero", () => {
+      test("Se comprueba que el argumento sea un número", () => {
         expect(typeof new_rutin.num_days).toBe('number');
       });
 
