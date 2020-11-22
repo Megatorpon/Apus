@@ -31,10 +31,10 @@ class Database{
 
   aniadirEjercicio(indice, ejercicio, musculos){
 
-    if (checkeaEjercicioExiste == false){
+    if (this.checkeaEjercicioExiste(indice) == false){
       let nuevo_ej = indice + ": " + ejercicio + "\n\t" + musculos + "\n\n";
 
-      fs.appendFile("../data/ejercicios.txt", nuevo_ej, function(err) {
+      fs.appendFileSync("../data/ejercicios.txt", nuevo_ej, function(err) {
         if (err) throw err;
         console.log("Updated");
       });
@@ -46,8 +46,8 @@ class Database{
   }
 
   checkeaEjercicioExiste(indice){
-    existeEjercicio = false;
-    fs.readFile("../data/ejercicios.txt", function(err, data) {
+    let existeEjercicio = false;
+    fs.readFileSync("../data/ejercicios.txt", function(err, data) {
       if (err) throw err;
 
       if(data.indexOf(indice) >= 0){

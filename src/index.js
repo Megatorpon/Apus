@@ -5,6 +5,8 @@ const Database = require('./database.js');
 
 let database = new Database();
 
+database.aniadirEjercicio("11", "Dominadas", "Dorsales");
+
 /*
 const http = require("http");
 

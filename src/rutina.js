@@ -113,7 +113,6 @@ class Rutina {
 	aniadeProgresoDia(num_dia, num_ej, max_peso){
 		this.training_days[num_dia].aniadeProgreso(num_ej, max_peso);
 	}
-
 }
 
 module.exports = Rutina
