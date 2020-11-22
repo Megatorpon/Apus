@@ -66,4 +66,5 @@ class DiaEntreno {
 	}
 }
 
+
 module.exports = DiaEntreno
