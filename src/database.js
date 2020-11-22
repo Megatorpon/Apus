@@ -28,6 +28,35 @@ class Database{
       stream.end();
     });
   }
+
+  aniadirEjercicio(indice, ejercicio, musculos){
+
+    if (checkeaEjercicioExiste == false){
+      let nuevo_ej = indice + ": " + ejercicio + "\n\t" + musculos + "\n\n";
+
+      fs.appendFile("../data/ejercicios.txt", nuevo_ej, function(err) {
+        if (err) throw err;
+        console.log("Updated");
+      });
+    }
+
+    else {
+      console.log("Este ejercicio ya está incluido");
+    }
+  }
+
+  checkeaEjercicioExiste(indice){
+    existeEjercicio = false;
+    fs.readFile("../data/ejercicios.txt", function(err, data) {
+      if (err) throw err;
+
+      if(data.indexOf(indice) >= 0){
+        existeEjercicio = true;
+      }
+    });
+
+    return existeEjercicio;
+  }
 }
 
 module.exports = Database
