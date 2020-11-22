@@ -1,17 +1,9 @@
 const Rutina = require('./rutina.js');
 const Ejercicio = require('./ejercicio.js');
 const DiaEntreno = require('./diaEntreno.js');
+const Database = require('./database.js');
 
-let rutin = new Rutina("Full body", "Fuerza");
-let ej_1 = new Ejercicio(5, "Press banca", 3, 10, "Pecho-Triceps");
-let ej_2 = new Ejercicio(10, "Remo", 4, 8, "Dorsales");
-let ejers = [];
-ejers.push(ej_1);
-ejers.push(ej_2);
-
-rutin.agregaDiaEntreno(0);
-rutin.establecerEjsDiaEntreno(0, ejers);
-console.log("Dias de entrenamiento:", rutin.getTrainingDays()[0]);
+let database = new Database();
 
 /*
 const http = require("http");
