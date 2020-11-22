@@ -46,7 +46,6 @@ class Rutina {
 		this.num_days = num_dias;
 	}
 
-	
 	agregaDiaEntreno(numero_dia){
 		let nuevo_dia = new diaEntreno(numero_dia);
 		this.training_days.push(nuevo_dia);
@@ -99,13 +98,20 @@ class Rutina {
 	}
 
 	exportarRutina(){
+		// Cogerá la información de la rutina y la exportará a un pdf
 	}
 
 	compartirRutina(metodo_compartir){
+		// Con esta función, el usuario enviará toda la información de la rutina
+		// a cualquier usuario que tenga agregado como amigo
 	}
 
 	clear(){
 		this.initialize();
+	}
+
+	aniadeProgresoDia(num_dia, num_ej, max_peso){
+		this.training_days[num_dia].aniadeProgreso(num_ej, max_peso);
 	}
 
 }

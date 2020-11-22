@@ -56,6 +56,10 @@ class DiaEntreno {
 		this.completado = dia_completado;
 	}
 
+	aniadeProgreso(num_ej, max_peso){
+		this.ejercicios[num_ej].aniadeProgreso(max_peso);
+	}
+
 	clear(){
 		this.ejercicios = [];
 		this.completado = false;
