@@ -1,0 +1,28 @@
+# Cargamos la imagen oficial de node para el contenedor
+FROM alpine:3.12.1
+
+# Introducimos los metadatos del autor del contenedor
+LABEL version = "1.0" maintainer = "Pablo Pérez Méndez"
+
+#creamos un usuario y una carpeta sobre la que tendrá permisos
+RUN adduser -S megatorpon
+
+#permisos necesarios para el usuario e instalación de node, npm y grunt
+RUN apk add nodejs \
+    && apk add npm \
+    && apk -U upgrade
+
+COPY package*.json ./
+
+RUN npm install && npm cache clean --force && rm ./package*.json
+
+USER megatorpon
+
+# Establecemos la variable de entorno de PATH a la carpeta node_modules
+ENV PATH=/node_modules/.bin:$PATH
+
+# Establecemos el directorio de trabajo a /tests
+WORKDIR /tests
+
+# Se ejecutan los comandos para lanzar los tests con grunt
+CMD ["grunt", "testing"]

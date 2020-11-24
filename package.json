@@ -1,7 +1,7 @@
 {
   "name": "apus",
   "version": "1.0.0",
-  "description": "Application for exercise routines",
+  "description": "Aplicación para creación de rutinas de gimnasio personalizadas",
   "main": "./src/index.js",
   "directories": {
     "doc": "docs"
@@ -19,15 +19,13 @@
     "url": "https://github.com/Megatorpon/Apus/issues"
   },
   "homepage": "https://github.com/Megatorpon/Apus#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
   "devDependencies": {
     "grunt": "^1.3.0",
     "grunt-contrib-jshint": "^3.0.0",
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-jest": "^0.4.0",
     "grunt-run": "^0.8.1",
+    "grunt-cli": "^1.3.2",
     "jest": "^26.6.1"
   }
 }
