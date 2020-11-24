@@ -4,8 +4,9 @@ Nuestro objetivo es la correcta elección de un contenedor para la ejecución de
 
 Usaremos el comando `time`, con el cual podemos saber el tiempo que tarda en ejecutarse un determinado comando.
 
-
 ## node:14.15.1-alpine3.12
+
+[Dockerfile](https://github.com/Megatorpon/Apus/blob/main/docs/docker_doc/Dockerfile_node)
 
 #### Tiempo de descarga
 
@@ -54,7 +55,7 @@ La imagen de Node ocupa un total de **277MB** y consume un tiempo total de **61 
 
 ## alpine:3.12.1
 
-Para comparar con la imagen de node anterior, vamos a usar la versión 3.12.1 de alpine.
+[Dockerfile](https://github.com/Megatorpon/Apus/blob/main/docs/docker_doc/Dockerfile_alpine)
 
 #### Tiempo de descarga
 
