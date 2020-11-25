@@ -36,10 +36,11 @@
 <li>Abrir PR y entregar hito 1</li>
 </ol>
 
+
 ## Hito 2 - Tests
 
-En este hito se introducen los tests unitarios en el proyecto, además de la automatización de estos, para asegurarnos de que nuestro código funciona correctamente 
-y hace lo que tiene que hacer. Para ello (y en general para trabajar con el proyecto), hemos comenzado a instalar las herramientas que usaremos a lo largo del curso, 
+En este hito se introducen los tests unitarios en el proyecto, además de la automatización de estos, para asegurarnos de que nuestro código funciona correctamente
+y hace lo que tiene que hacer. Para ello (y en general para trabajar con el proyecto), hemos comenzado a instalar las herramientas que usaremos a lo largo del curso,
 empezando por el gestor de paquetes npm, haciendo uso de la orden:
 
 `sudo apt install npm`
@@ -52,9 +53,9 @@ Como se ha explicado anteriormente, el framework de tests que se ha escogido es 
 
 
 Como base para este hito, se ha decidido completar las clases ya creadas anteriormente (Rutina, DiaEntreno y Ejercicio), las cuales están relacionadas entre sí para avanzar
-en la compleción de la [HU01](https://github.com/Megatorpon/Apus/issues/4). Se ha creado una clase con la que el usuario podrá añadir una rutina a su cuenta, a la cual a su 
-vez podrá añadirle varios días de entrenamiento y ejercicios a estos últimos. Lo que querremos testear a través del fichero Rutina.test.js es, como el propio nombre 
-indica, la clase Rutina. Con ello se revisará que todos los métodos que tenga ya implementados esta clase funcionen correctamente. Los métodos, que abarcan la historia de 
+en la compleción de la [HU01](https://github.com/Megatorpon/Apus/issues/4). Se ha creado una clase con la que el usuario podrá añadir una rutina a su cuenta, a la cual a su
+vez podrá añadirle varios días de entrenamiento y ejercicios a estos últimos. Lo que querremos testear a través del fichero Rutina.test.js es, como el propio nombre
+indica, la clase Rutina. Con ello se revisará que todos los métodos que tenga ya implementados esta clase funcionen correctamente. Los métodos, que abarcan la historia de
 usuario anteriormente mencionada (poder añadir/modificar/eliminar rutinas), son sencillos pero suficientes por ahora. A medida que avance el proyecto se irán completando con
 más funcionalidades (por ejemplo, a la hora de guardar la información en la base de datos).
 
@@ -78,3 +79,33 @@ Además de ello, se han añadido nuevas historias de usuario y actualizado el no
 [HU04 - Como usuario, quiero que se me recomiende una rutina según mis objetivos físicos](https://github.com/Megatorpon/Apus/issues/19)<br>
 [HU05 - Como usuario, quiero poder establecerle una dieta personalizada a una rutina añadida anteriormente](https://github.com/Megatorpon/Apus/issues/22)<br>
 
+
+## Hito 3 - Contenedores Docker
+
+Este hito se basa en la introducción de un contenedor Docker en nuestro proyecto para la ejecución de los tests unitarios establecidos en el hito anterior.
+
+Lo primero es instalar Docker en nuestro sistema. Yo personalmente ya lo tenía instalado debido a otra asignatura así que este paso me lo he ahorrado para este hito.
+El siguiente paso es proceder a crear el Dockerfile con el que ejecutaremos las pruebas. Tras haberme documentado en internet sobre la correcta configuración de este archivo,
+se ha procedido a redactarlo, teniendo en cuenta las [buenas prácticas] que se recomiendan llevar a cabo. Además, se han utilizado dos imágenes de Docker distintas para tratar de elegir la que más convenía. Hemos una imagen de Alpine oficial y la imagen de Node oficial con tag alpine, que es la que finalmente ha sido elegida por las razones que se explica en este [documento]().
+
+Tras haber terminado con la creación del [Dockerfile](https://github.com/Megatorpon/Apus/blob/main/Dockerfile), el siguiente paso era la subida de la imagen generada a [DockerHub](https://github.com/Megatorpon/Apus/blob/main/docs/docker_doc/subida_dockerhub.md), activando la actualización automática de manera que cada vez que se hace un push en el repositorio de GitHub también se actualice el repositorio de DockerHub. Además, se ha subido también a [GitHub Container Registry] siguiendo la documentación oficial.
+
+También se ha añadido una nueva clase [Database](https://github.com/Megatorpon/Apus/blob/main/src/database.js), que se deberá completar con futuras actualizaciones. Esta clase se encargará de administrar los archivos de la carpeta [data](https://github.com/Megatorpon/Apus/tree/main/data), en los que se guardará toda la información relacionada con las rutinas, ejercicios, consejos, etc, generados. Por ahora simplemente se basa en crear una lista de ejercicios de base, a la cual se le pueden añadir más y verificar, a la hora de ello, si un ejercicio ya está presente en la lista. En un futuro próximo se completará con mas funcionalidades. Por otro lado, se ha añadido la función AniadirProgreso a la clase Rutina, con la que el usuario podrá dejar el guardado el progreso de x ejercicio que esté llevando a cabo a lo largo de las semanas.
+
+Las issues que se han añadido en este hito del proyecto son las siguientes:
+
+[Añadir función para registrar progreso](https://github.com/Megatorpon/Apus/issues/39)<br>
+[Añadir clase Database para guardar los datos](https://github.com/Megatorpon/Apus/issues/40)<br>
+[Implementar funciones para añadir nuevos ejercicios a Database](https://github.com/Megatorpon/Apus/issues/41)<br>
+[Creación del Dockerfile](https://github.com/Megatorpon/Apus/issues/43)<br>
+[Elección y justificación del contenedor](https://github.com/Megatorpon/Apus/issues/44)<br>
+[Añadir nueva información al Readme](https://github.com/Megatorpon/Apus/issues/45)<br>
+[Configurar .dockerignore](https://github.com/Megatorpon/Apus/issues/46)<br>
+[Añadir documentación buenas prácticas](https://github.com/Megatorpon/Apus/issues/47)<br>
+[Añadir documentación de subida a Github Container Registry](https://github.com/Megatorpon/Apus/issues/48)<br>
+[Añadir documentación de subida a DockerHub](https://github.com/Megatorpon/Apus/issues/49)<br>
+[Actualizar pasos seguidos en el hito 3](https://github.com/Megatorpon/Apus/issues/50)<br>
+
+Además de ello, se ha añadido una nueva HU:
+
+[HU06 - Como desarrollador, deseo poder editar la información de la base de datos](https://github.com/Megatorpon/Apus/issues/42)
