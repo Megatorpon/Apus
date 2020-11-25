@@ -12,7 +12,7 @@ Usaremos el comando `time`, con el cual podemos saber el tiempo que tarda en eje
 
 Descargamos la imagen con `docker pull`, medida con el comando `time`. El resultado es el siguiente:
 
-[node_download](https://github.com/Megatorpon/Apus/blob/main/docs/img/node_download.png)
+![node_download](https://github.com/Megatorpon/Apus/blob/main/docs/img/node_download.png)
 
 El tiempo de descarga de esta imagen es de **14.205 segundos**
 
@@ -20,7 +20,7 @@ El tiempo de descarga de esta imagen es de **14.205 segundos**
 
 Construiremos la imagen con `time docker build -t megatorpon/apus_node .`
 
-[node_build](https://github.com/Megatorpon/Apus/blob/main/docs/img/node_build.png)
+![node_build](https://github.com/Megatorpon/Apus/blob/main/docs/img/node_build.png)
 
 El tiempo de construcción es de **39.451 segundos**
 
@@ -28,9 +28,9 @@ El tiempo de construcción es de **39.451 segundos**
 
 Para consultar el tamaño de las imágenes usamos `docker images`.
 
-[node_size_1](https://github.com/Megatorpon/Apus/blob/main/docs/img/node_size_1.png)
+![node_size_1](https://github.com/Megatorpon/Apus/blob/main/docs/img/node_size_1.png)
 
-[node_size_2](https://github.com/Megatorpon/Apus/blob/main/docs/img/node_size_2.png)
+![node_size_2](https://github.com/Megatorpon/Apus/blob/main/docs/img/node_size_2.png)
 
 **El tamaño de la imagen descargada es de 117MB**
 
@@ -44,7 +44,7 @@ Después de esto, montamos un volumen con la carpeta raíz del proyecto y la car
 
 time docker run -t -v pwd:/tests megatorpon/apus_node
 
-[node_exec](https://github.com/Megatorpon/Apus/blob/main/docs/img/node_exec.png)
+![node_exec](https://github.com/Megatorpon/Apus/blob/main/docs/img/node_exec.png)
 
 El tiempo de ejecución es de **7.337 segundos**
 
@@ -61,7 +61,7 @@ La imagen de Node ocupa un total de **277MB** y consume un tiempo total de **61 
 
 Descargamos la imagen como antes, con `docker pull` y medida con `time`, cuyo resultado es:
 
-[alpine_download](https://github.com/Megatorpon/Apus/blob/main/docs/img/alpine_download.png)
+![alpine_download](https://github.com/Megatorpon/Apus/blob/main/docs/img/alpine_download.png)
 
 El tiempo de descarga de esta imagen es de **3.795 segundos**
 
@@ -69,7 +69,7 @@ El tiempo de descarga de esta imagen es de **3.795 segundos**
 
 Construiremos la imagen con `time docker build -t megatorpon/apus_alpine .`
 
-[alpine_build](https://github.com/Megatorpon/Apus/blob/main/docs/img/alpine_build.png)
+![alpine_build](https://github.com/Megatorpon/Apus/blob/main/docs/img/alpine_build.png)
 
 El tiempo de construcción es de **57.575 segundos**
 
@@ -77,9 +77,9 @@ El tiempo de construcción es de **57.575 segundos**
 
 Para consultar el tamaño de las imágenes usamos `docker images`.
 
-[alpine_size_1](https://github.com/Megatorpon/Apus/blob/main/docs/img/alpine_size_1.png)
+![alpine_size_1](https://github.com/Megatorpon/Apus/blob/main/docs/img/alpine_size_1.png)
 
-[alpine_size_2](https://github.com/Megatorpon/Apus/blob/main/docs/img/alpine_size_2.png)
+![alpine_size_2](https://github.com/Megatorpon/Apus/blob/main/docs/img/alpine_size_2.png)
 
 **El tamaño de la imagen descargada es de 5.57MB**
 
@@ -91,7 +91,7 @@ Para medir el tiempo de ejecución, usaremos los mismos comandos.
 Ejecutamos montando el volumen con la carpeta raíz del proyecto así:
 `time docker run -t -v pwd:/tests megatorpon/apus_alpine`
 
-[alpine_exec](https://github.com/Megatorpon/Apus/blob/main/docs/img/alpine_exec.png)
+![alpine_exec](https://github.com/Megatorpon/Apus/blob/main/docs/img/alpine_exec.png)
 
 El tiempo de ejecución es de **8.150 segundos**
 

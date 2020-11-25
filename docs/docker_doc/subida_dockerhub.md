@@ -10,11 +10,11 @@ El primer paso es crearse una cuenta en la página de [Docker Hub](https://hub.d
 
 A continuación, crearemos un repositorio público con el mismo nombre de usuario y de repositorio que en Github pero en minúsculas. Pinchamos en el símbolo de GitHub para elegir el repositorio al que enlazarlo y escogemos el nuestro del proyecto. En nuestro caso, ha quedado de la siguiente manera:
 
-[repo_docker](https://github.com/Megatorpon/Apus/blob/main/docs/img/repo_docker.png)
+![repo_docker](https://github.com/Megatorpon/Apus/blob/main/docs/img/repo_docker.png)
 
 
 #### Automatización
 
 Para la configuración de la build automática y que se construya la imagen automáticamente a partir del Dockerfile cada vez que realiza un git push en el repositorio de GitHub, bastará con añadir una **build rule** en el repositorio de DockerHub. En la siguiente imagen se muestra como se queda.
 
-[build_rules](https://github.com/Megatorpon/Apus/blob/main/docs/img/build_rules.png)
+![build_rules](https://github.com/Megatorpon/Apus/blob/main/docs/img/build_rules.png)

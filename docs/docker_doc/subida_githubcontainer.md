@@ -4,7 +4,7 @@ Para la subida de la imagen a GitHub Container Registry, se han seguido los paso
 
 1. Antes de empezar, es imprescindible asegurarse de tener activada la opción **Improved container support**. Para ello pinchamos en nuestra foto de perfil de Github, luego pinchamos en **Feature preview** y nos debe aparecer la opción en Disable, lo cual quiere decir que está activada.
 
-[container_supp](https://github.com/Megatorpon/Apus/blob/main/docs/img/improved_cont_supp.png)
+![container_supp](https://github.com/Megatorpon/Apus/blob/main/docs/img/improved_cont_supp.png)
 
 2. Para la autenticación en GitHub Container Registry, es necesario generar un Personal Access Token(PAT) en nuestra cuenta de GitHub, seleccionando los siguientes tags: `read:packages`, `write:packages` y `delete:packages`. Finalmente, generamos el token y guardamos el código generado en una variable de entorno con `$ export CR_PAT=YOUR_TOKEN`
 
@@ -24,4 +24,4 @@ Para la subida de la imagen a GitHub Container Registry, se han seguido los paso
 
 7. Finalmente, lo único restante es sincronizarlo con nuestro repositorio. Seleccionamos el paquete, pinchamos en `Connect Repository` y elegimos el repositorio correspondiente.
 
-[apus_package](https://github.com/Megatorpon/Apus/blob/main/docs/img/apus_package.png)
+![apus_package](https://github.com/Megatorpon/Apus/blob/main/docs/img/apus_package.png)
