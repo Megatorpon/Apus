@@ -125,7 +125,6 @@ ___
 Configuración inicial de git --> [Configuración inicial](https://github.com/Megatorpon/Apus/blob/main/docs/config_git.md)
 
 
-
 ## Autor
 ___
 
