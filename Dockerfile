@@ -8,7 +8,7 @@ LABEL version = "1.0" maintainer = "Pablo Pérez Méndez"
 COPY package*.json ./
 
 # Instalamos las dependencias, limpiamos la cache y borramos los .json
-RUN npm install && npm cache clean --force && rm ./package*.json
+RUN npm install && npm i -g grunt-cli grunt-run && npm cache clean --force && rm ./package*.json
 
 ## Cambiamos a un usuario sin privilegios
 USER node
