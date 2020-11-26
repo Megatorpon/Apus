@@ -44,7 +44,7 @@ Para la correcta ejecución de este, simplemente habrá que buildear la imagen a
 
 A continuación, nos situamos en la carpeta raíz del proyecto y lanzamos la siguiente orden, que cargará un contenedor con la imagen y un volumen sobre la carpeta en la que estamos situados:
 
-`docker run -t -v ```pwd```:/tests megatorpon/apus`
+`docker run -t -v ``pwd``:/tests megatorpon/apus`
 
 Documentación detallada:
 
