@@ -16,5 +16,3 @@ A la hora de configurar y editar un Dockerfile, es recomendable llevar a cabo un
 
 - **No utilizar root**: una vez completadas todas las órdenes necesarias para instalar aquello que necesites, siempre es recomendable cambiar a un usuario sin privilegios para, de esta manera, evitar la posibilidad de acceder y modificar archivos que no deberíamos.
   Las imágenes de Node proveen de base un usuario llamado node precisamente para este propósito. Como nosotros utilizamos una imagen Node, tras haber instalado las dependencias cambiaremos a este con la orden `USER node`.
-
-  

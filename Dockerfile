@@ -5,7 +5,7 @@ FROM node:14.15.1-alpine3.12
 LABEL version = "1.0" maintainer = "Pablo Pérez Méndez"
 
 # Se copian los ficheros json al contenedor
-COPY Gruntfile.js package*.json ./
+COPY package*.json ./
 
 # Instalamos las dependencias, limpiamos la cache y borramos los .json
 RUN npm install && npm i -g grunt-cli grunt-run && npm cache clean --force && rm ./package*.json
