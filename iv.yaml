@@ -1,9 +1,9 @@
-entidad: 
+entidad:
   - src/rutina.js
   - src/diaEntreno.js
   - src/ejercicio.js
   - src/index.js
 lenguaje: javascript
 test:
-  - tests/rutina.test.js
+  - test/rutina.test.js
 taskfile: Gruntfile.js
