@@ -16,8 +16,8 @@ USER node
 # Establecemos la variable de entorno de PATH a la carpeta node_modules
 ENV PATH=/node_modules/.bin:$PATH
 
-# Establecemos el directorio de trabajo a /tests
-WORKDIR /tests
+# Establecemos el directorio de trabajo a /test
+WORKDIR /test
 
 # Se ejecutan los comandos para lanzar los tests con grunt
 CMD ["grunt", "testing"]
