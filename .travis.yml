@@ -2,12 +2,12 @@
 language: node_js
 # Se indican las versiones en las que se va a probar
 node_js:
-  -"10"
-  -"11"
-  -"12"
-  -"13"
-  -"14"
-
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - node
 # Se ejecuta antes de la instalación de la aplicación
 before_install:
   -  npm install
