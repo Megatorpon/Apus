@@ -120,6 +120,7 @@ En el caso de Travis, lo primero es ir a la página web y crearse una cuenta. El
 
 En segundo lugar, debemos hacer lo mismo con CircleCI. El procedimiento es prácticamente el mismo. Debemos visitar la página web y registrarnos con nuestra cuenta de Github, dando los permisos necesarios para funcionar correctamente. A continuación, debemos elegir el proyecto adecuado en la misma página y crear el fichero de configuración, que en este caso se ubicará dentro de la carpeta .circleci en la raíz del repositorio y se llamará [config.yml](https://github.com/Megatorpon/Apus/tree/main/.circleci/travis.yml). Tras configurar este archivo, CircleCI estará también listo para ejecutarse cada vez que hagamos un push al repo.
 
+También se ha añadido en este hito al fichero index.js algunas rutas de la aplicación como /rutina, /ejercicio, etc, además de un logger que nos indica por consola la información de las peticiones que se hacen en cada momento. En estas rutas se incluye la posibilidad de recibir y añadir ejercicios en la base de datos, crear objetos de rutina y recibirlos posteriormente y se han instalado varios módulos útiles tanto para el desarrollo del proyecto (como nodemon) como para el proyecto en sí (morgan, n-readlines, etc)
 
 Las issues que se han añadido en este hito del proyecto son las siguientes:
 
@@ -128,5 +129,6 @@ Las issues que se han añadido en este hito del proyecto son las siguientes:
 [Añadir configuración de CircleCI](https://github.com/Megatorpon/Apus/issues/59)<br>
 [Añadir justificación de uso de CircleCI](https://github.com/Megatorpon/Apus/issues/60)<br>
 [Actualizar Readme](https://github.com/Megatorpon/Apus/issues/61)<br>
-[Cambiar fichero de configuración de Travis](https://github.com/Megatorpon/Apus/issues/63)<br>
 [Actualizar fichero de pasos del hito](https://github.com/Megatorpon/Apus/issues/62)<br>
+[Cambiar fichero de configuración de Travis](https://github.com/Megatorpon/Apus/issues/63)<br>
+[Añadir nuevas rutas y funciones al index.js](https://github.com/Megatorpon/Apus/issues/64)<br>
