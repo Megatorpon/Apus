@@ -13,6 +13,8 @@ Es necesario añadir a la raíz de nuestro repositorio una carpeta oculta llamad
 En primer lugar, debemos establecer la versión de CircleCI a utilizar (en nuestro caso utilizaremos la versión 2.1).
 A continuación añadiremos la etiqueta jobs, que incluirá las tareas a llevar a cabo y nombraremos a nuestra tarea como `build`. Nuestro objetivo será que en esta tarea se ejecuten los tests dentro del contenedor que tenemos subido en DockerHub. Por lo tanto, utilizaremos la etiqueta Docker para hacer pull de nuestra imagen y, tras ello, estableceremos los pasos a completar en esta tarea. Primero se realizará un checkout y a continuación se ejecutará la orden `grunt testing` para la ejecución de tests. Esto es así porque a la hora de hacer pull de una imagen de Docker, CircleCI nos introduce dentro de esta, de forma que solo es necesario ejecutar `grunt testing` a diferencia de Travis que tenemos que ejecutarla estando fuera del contenedor.
 
+Finalmente, añadiremos la sección de workflows, la cual sirve para organizar la ejecución de las tareas de una manera determinada. Es muy útil cuando hay muchas tareas presentes. En nuestro caso, al tener solamente una no se aprovecha pero es necesario añadirlo para poder instalar en el repositorio la Api Checks de CircleCI.
+
 El fichero final quedaría de la siguiente manera:
 
 ![circleci_yml](https://github.com/Megatorpon/Apus/blob/main/docs/img/circleci_yml.png)
