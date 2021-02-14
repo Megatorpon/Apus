@@ -132,3 +132,7 @@ Las issues que se han añadido en este hito del proyecto son las siguientes:
 [Actualizar fichero de pasos del hito](https://github.com/Megatorpon/Apus/issues/62)<br>
 [Cambiar fichero de configuración de Travis](https://github.com/Megatorpon/Apus/issues/63)<br>
 [Añadir nuevas rutas y funciones al index.js](https://github.com/Megatorpon/Apus/issues/64)<br>
+[Añadir etiqueta make al iv.yaml](https://github.com/Megatorpon/Apus/issues/65)<br>
+[Añadir workflows al fichero de circleci](https://github.com/Megatorpon/Apus/issues/66)<br>
+[Actualizar documentación de circleci](https://github.com/Megatorpon/Apus/issues/67)<br>
+[Actualizar pasos con nuevas issues](https://github.com/Megatorpon/Apus/issues/68)<br>
