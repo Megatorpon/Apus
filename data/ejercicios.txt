@@ -1,30 +1,24 @@
-1: La prensa
+0: La prensa
 	Músculos: cuádriceps, gemelos, glúteos
-
-2: Extensión de rodilla
-  Músculos: cuádriceps
-
-3: Press banca
-  Músculos: pectoral, deltoides anterior, tríceps
-
-4: Apertura con mancuernas
-  Músculos: pectoral
-
-5: Press militar
-  Músculos: deltoides, trapecios
-
-6: Press Arnold
-  Músculos: deltoides
-
-7: Curl de bíceps con mancuernas
-  Músculos: bíceps
-
-8: Curl de bíceps concentrado
-  Músculos: bíceps
-
-9: Flexiones con manos juntas
-  Músculos: tríceps
-
-10: Press francés
-  Músculos: tríceps
-
+1: Extensión de rodilla
+	Músculos: cuádriceps
+2: Press banca
+	Músculos: pectoral, deltoides anterior, tríceps
+3: Apertura con mancuernas
+	Músculos: pectoral
+4: Press militar
+	Músculos: deltoides, trapecios
+5: Press Arnold
+	Músculos: deltoides
+6: Curl de bíceps con mancuernas
+	Músculos: bíceps
+7: Curl de bíceps concentrado
+	Músculos: bíceps
+8: Flexiones con manos juntas
+	Músculos: tríceps
+9: Press francés
+	Músculos: tríceps
+10:Peso muerto
+Musculos:General
+10:Peso muerto
+Musculos:General

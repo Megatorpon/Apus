@@ -49,6 +49,7 @@ class Rutina {
 	agregaDiaEntreno(numero_dia){
 		let nuevo_dia = new diaEntreno(numero_dia);
 		this.training_days.push(nuevo_dia);
+		this.num_days += 1;
 	}
 
 	establecerEjsDiaEntreno(index, ejercicios){
