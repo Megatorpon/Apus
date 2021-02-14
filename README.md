@@ -115,6 +115,43 @@ que ejecutará la tarea asociada a ese comando en el [Gruntfile.js](https://gith
 Este comando ejecuta los tests guardados en la carpeta [tests](https://github.com/Megatorpon/Apus/blob/main/tests) por medio de la orden Jest. Finalmente, se listarán por consola los resultados
 de los tests ejecutados.
 
+## Integración continua
+
+Para la integración continua de nuestro proyecto, se ha decidido utilizar tanto Travis como CircleCI, los cuales permiten la ejecución de los tests en el momento en el que se realiza un push al repositorio y testear de esta forma que el nuevo código añadido no esté "roto". Ambos tienen muy buena integración con GitHub además de un amplio número de ventajas.
+
+#### Uso del gestor de tareas y aprovechamiento del contenedor de DockerHub
+
+Se ha decidido utilizar la imagen de DockerHub en ambos casos. Para Travis primero instalamos y lanzamos Docker, luego hacemos pull de la imagen deseada y finalmente, ejecutamos la orden para lanzar los tests con esta imagen. En ese caso la sección del fichero que utiliza Docker se vería así:
+```
+services:
+  - docker
+
+before_script:
+  -  docker pull megatorpon/apus
+
+script: docker run -t -v ${TRAVIS_BUILD_DIR}:/test megatorpon/apus
+```
+
+Para el caso de CircleCI es ligeramente diferente. Dentro de la etiqueta de nuestra tarea, usaremos directamente la etiqueta `docker`, que nos permitirá hacer pull de nuestro contenedor y lanzarlo para introducirnos en él.
+```
+jobs:
+  build:
+    docker:
+      - image: megatorpon/apus
+```
+
+El gestor de tareas se utiliza de manera diferente en cada sistema. Travis hace pull del contenedor de DockerHub y seguidamente, ejecuta los tests con la orden vista unas líneas más arriba.
+```script: docker run -t -v ${TRAVIS_BUILD_DIR}:/test megatorpon/apus
+```
+
+En el caso de CircleCI, hacemos pull de la imagen igualmente pero, al introducirnos directamente dentro del contenedor, lo único que debemos hacer es `grunt testing` y por lo tanto, se quedaría de la siguiente manera:
+```
+steps:
+  - checkout
+  - run: grunt testing
+```
+
+Sobre el uso de estos sistemas de integración continua podemos encontrar más información en el apartado de información adicional, al pie del README.
 
 ## Información adicional
 ___
@@ -123,6 +160,9 @@ ___
 
 Configuración inicial de git --> [Configuración inicial](https://github.com/Megatorpon/Apus/blob/main/docs/config_git.md)
 
+Uso de Travis --> [Travis](https://github.com/Megatorpon/Apus/blob/main/docs/integracion_continua/travis.md)
+
+Uso de CircleCI --> [CircleCI](https://github.com/Megatorpon/Apus/blob/main/docs/integracion_continua/circleci.md)
 
 ## Autor
 ___
