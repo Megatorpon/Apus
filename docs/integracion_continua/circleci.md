@@ -15,10 +15,10 @@ A continuación añadiremos la etiqueta jobs, que incluirá las tareas a llevar 
 
 El fichero final quedaría de la siguiente manera:
 
-[circleci_yml](https://github.com/Megatorpon/Apus/blob/main/docs/img/circleci_yml.png)
+![circleci_yml](https://github.com/Megatorpon/Apus/blob/main/docs/img/circleci_yml.png)
 
 ## Prueba de CircleCI
 
 Debajo de estas líneas, podemos observar la correcta integración de circleCI en nuestro proyecto, ejecutando sin errores los tests preparados a una alta velocidad:
 
-[circleci_prueba](https://github.com/Megatorpon/Apus/blob/main/docs/img/circleci_prueba.png)
+![circleci_prueba](https://github.com/Megatorpon/Apus/blob/main/docs/img/circleci_prueba.png)
