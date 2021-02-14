@@ -1,14 +1,19 @@
 # Indicamos el lenguaje que se va a usar
 language: node_js
-# Se indican las versiones en las que se va a probar
+# Se indican las versiones en las que se va a testear
 node_js:
   - 10
-  - 11
   - 12
-  - 13
   - 14
-# Se ejecuta antes de la instalación de la aplicación
-before_install:
-  -  npm install
-# Se ejecuta el script de prueba
-script: grunt testing
+  - 15
+
+# Indicamos que vamos a utilizar docker como servicio
+services:
+  - docker
+
+# Hacemos pull de la imagen de testing de nuestro proyecto
+before_script:
+  -  docker pull megatorpon/apus
+
+# Ejecutamos la imagen con la orden adecuada (presente en el README del proyecto)
+script: docker run -t -v $TRAVIS_BUILD_DIR:/tests megatorpon/apus
