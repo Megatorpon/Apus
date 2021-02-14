@@ -109,3 +109,24 @@ Las issues que se han añadido en este hito del proyecto son las siguientes:
 Además de ello, se ha añadido una nueva HU:
 
 [HU06 - Como desarrollador, deseo poder editar la información de la base de datos](https://github.com/Megatorpon/Apus/issues/42)
+
+## Hito 4 - Integración continua
+
+Este hito se basa en la introducción de integración continua en nuestro proyecto por medio de alguno de los sistemas elegidos.
+
+Para ello, primero se han barajado varias opciones y entre todas, finalmente se ha decidido por utilizar tanto Travis como CircleCI.
+
+En el caso de Travis, lo primero es ir a la página web y crearse una cuenta. El registro es bastante simple, pues podemos hacerlo directamente con nuestra cuenta de Github, dando los permisos necesarios a la página de Travis. Tras esto, el siguiente paso es elegir el repositorio en el que nos interesa utilizar Travis. Una vez hecho esto, para que Travis pueda trabajar y realizar su función cada vez que hacemos un push, es imprescindible añadir a nuestro proyecto un fichero [.travis.yml](https://github.com/Megatorpon/Apus/tree/main/.travis.yml), con el que se configurarán las tareas a llevar a cabo por Travis. Tras esto, Travis ya estará listo para trabajar.
+
+En segundo lugar, debemos hacer lo mismo con CircleCI. El procedimiento es prácticamente el mismo. Debemos visitar la página web y registrarnos con nuestra cuenta de Github, dando los permisos necesarios para funcionar correctamente. A continuación, debemos elegir el proyecto adecuado en la misma página y crear el fichero de configuración, que en este caso se ubicará dentro de la carpeta .circleci en la raíz del repositorio y se llamará [config.yml](https://github.com/Megatorpon/Apus/tree/main/.circleci/travis.yml). Tras configurar este archivo, CircleCI estará también listo para ejecutarse cada vez que hagamos un push al repo.
+
+
+Las issues que se han añadido en este hito del proyecto son las siguientes:
+
+[Añadir fichero de configuración de Travis](https://github.com/Megatorpon/Apus/issues/57)<br>
+[Añadir justificación de por qué usar Travis](https://github.com/Megatorpon/Apus/issues/58)<br>
+[Añadir configuración de CircleCI](https://github.com/Megatorpon/Apus/issues/59)<br>
+[Añadir justificación de uso de CircleCI](https://github.com/Megatorpon/Apus/issues/60)<br>
+[Actualizar Readme](https://github.com/Megatorpon/Apus/issues/61)<br>
+[Cambiar fichero de configuración de Travis](https://github.com/Megatorpon/Apus/issues/63)<br>
+[Actualizar fichero de pasos del hito](https://github.com/Megatorpon/Apus/issues/62)<br>
