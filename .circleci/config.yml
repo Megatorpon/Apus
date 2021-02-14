@@ -14,3 +14,9 @@ jobs:
       - checkout
       # Ejecución de los tests
       - run: grunt testing
+
+# Declaramos el flujo de trabajo
+workflows:
+  building:
+    jobs:
+      - build
