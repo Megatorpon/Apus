@@ -1,0 +1,19 @@
+# Versión a utilizar de CircleCI
+version: 2.1
+
+# Declaramos las tareas
+jobs:
+  # Establecemos una tarea llamada build
+  build:
+    # Usamos Docker para hacer pull de la imagen de nuestro repositorio para las pruebas
+    docker:
+      - image: megatorpon/apus
+
+    # Pasos a llevar a cabo por la tarea
+    steps:
+      # Checkout del repositorio
+      - checkout
+      # Ejecución de los tests
+      - run:
+        name: "Ejecución de tests"
+        command: grunt testing
