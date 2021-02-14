@@ -16,4 +16,4 @@ before_script:
   -  docker pull megatorpon/apus
 
 # Ejecutamos la imagen con la orden adecuada (presente en el README del proyecto)
-script: docker run -t -v `pwd`:/tests megatorpon/apus
+script: docker run -t -v ${TRAVIS_BUILD_DIR}:/test megatorpon/apus
