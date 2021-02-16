@@ -4,9 +4,8 @@ function rutinaRecomendada(objetivo){
   let encontrado = false;
   let cadena = "";
 
-
+  console.log(data["rutinas"].length)
   for (let i = 0; i < data["rutinas"].length && !encontrado; ++i){
-    console.log(data["rutinas"][i]["objetivo"]);
     if (data["rutinas"][i]["objetivo"] == objetivo){
       encontrado = true;
       cadena = "Nombre: " + data["rutinas"][i]["nombre"] + "\n" +
@@ -31,9 +30,8 @@ exports.handler = async function(event, context) {
   let body = JSON.parse(event.body);
   let msg = body.message.text;
   let chat_id = body.message.chat.id;
-  console.log(msg)
-
   let cadena = "";
+
   switch(msg){
     case "/definir":
       cadena = rutinaRecomendada("Definir");
