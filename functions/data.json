@@ -1,0 +1,108 @@
+{
+  "rutinas":[
+    {
+      "nombre":"Rutina general",
+      "objetivo":"Definir",
+      "dias_semana":5,
+      "ejercicios":[
+        {
+          "nombre_ej":"Press banca",
+          "musculoPrincipal":"Pecho"
+        },
+        {
+          "nombre_ej":"Curl de biceps",
+          "musculoPrincipal":"Biceps"
+        },
+        {
+          "nombre_ej":"Aperturas inclinadas",
+          "musculoPrincipal":"Pecho"
+        },
+        {
+          "nombre_ej":"Peso muerto rumano",
+          "musculoPrincipal":"General"
+        },
+        {
+          "nombre_ej":"Prensa",
+          "musculoPrincipal":"Cuádriceps"
+        }
+      ]
+    },
+    {
+      "nombre":"Rutina vitónica PG"
+      "objetivo":"Adelgazar",
+      "dias_semana":4,
+      "ejercicios":[
+        {
+          "nombre_ej":"Sentadillas",
+          "musculoPrincipal":"Piernas"
+        },
+        {
+          "nombre_ej":"Press banca",
+          "musculoPrincipal":"Pecho"
+        },
+        {
+          "nombre_ej":"Dominadas",
+          "musculoPrincipal":"Espalda"
+        },
+        {
+          "nombre_ej":"Burpees",
+          "musculoPrincipal":"General"
+        },
+        {
+          "nombre_ej":"Correr",
+          "musculoPrincipal":"Cardio"
+        },
+      ]
+    },
+    {
+      "nombre":"Muscular Foodspring",
+      "objetivo":"Volumen",
+      "dias_semana":3,
+      "ejercicios":[
+        {
+          "nombre_ej":"Press militar",
+          "musculoPrincipal":"Hombros"
+        },
+        {
+          "nombre_ej":"Peso muerto",
+          "musculoPrincipal":"General"
+        },
+        {
+          "nombre_ej":"Press banca",
+          "musculoPrincipal":"Pecho"
+        },
+        {
+          "nombre_ej":"Sentadillas",
+          "musculoPrincipal":"Piernas"
+        }
+      ]
+    },
+    {
+      "nombre":"HIIT",
+      "objetivo":"Resistencia",
+      "dias_semana":3,
+      "ejercicios":[
+        {
+          "nombre_ej":"Skipping",
+          "musculoPrincipal":"Cardio"
+        },
+        {
+          "nombre_ej":"Jumping Jacks",
+          "musculoPrincipal":"Cardio"
+        },
+        {
+          "nombre_ej":"Sentadillas saltando",
+          "musculoPrincipal":"Cardio"
+        },
+        {
+          "nombre_ej":"Rodillas arriba",
+          "musculoPrincipal":"Cardio"
+        },
+        {
+          "nombre_ej":"Zancadas saltando",
+          "musculoPrincipal":"Cardio"
+        }
+      ]
+    }
+  ]
+}
