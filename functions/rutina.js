@@ -27,11 +27,11 @@ function rutinaRecomendada(objetivo){
 
 exports.handler = async function(event, context) {
   let body = JSON.parse(event.body);
-  let {chat, msg} = body.message;
-  var chat_id = chat.id;
-  let cadena = "";
+  let msg = body.message.text;
+  let chat_id = body.message.chat.id;
   console.log(msg)
-  
+
+  let cadena = "";
   switch(msg){
     case "/definir":
       cadena = rutinaRecomendada("Definir");
