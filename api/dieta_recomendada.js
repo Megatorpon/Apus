@@ -8,8 +8,8 @@ function consejosDieta(objetivo){
   for (let i = 0; i < n_dietas && !encontrado; ++i){
     if (data["consejos_dieta"][i]["objetivo"] == objetivo){
       encontrado = true;
-      consejo = "Para mejorar podrías" + data["consejos_dieta"][i]["a_mejorar"];
-      consejo += "Por otro lado, deberías evitar:" + data["consejos_dieta"][i]["a_evitar"];
+      consejo = "Para mejorar podrías " + data["consejos_dieta"][i]["a_mejorar"];
+      consejo += ". Por otro lado, deberías evitar " + data["consejos_dieta"][i]["a_evitar"];
     }
   }
 
