@@ -29,11 +29,12 @@ module.exports = (req, res) => {
     resultado = "Por favor, indique un objetivo válido";
     codigo = 400;
   }
-  
+
   else{
     resultado = consejosDieta(objetivo)
     codigo = 200;
   }
 
   res.status(codigo).send(resultado)
+  
 }
