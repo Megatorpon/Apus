@@ -35,6 +35,9 @@ module.exports = (req, res) => {
     codigo = 200;
   }
 
-  res.status(codigo).send(resultado)
-  
+  res.status(codigo).send(JSON.stringify({
+    objetivo: objetivo,
+    consejo: resultado
+  }))
+
 }
