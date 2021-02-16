@@ -25,11 +25,11 @@ module.exports = (req, res) => {
     codigo = 400;
   }
 
-  elseif (objetivo != 'Adelgazar' && objetivo != 'Volumen' && objetivo != 'Saludable'){
+  else if (objetivo != 'Adelgazar' && objetivo != 'Volumen' && objetivo != 'Saludable'){
     resultado = "Por favor, indique un objetivo válido";
     codigo = 400;
   }
-
+  
   else{
     resultado = consejosDieta(objetivo)
     codigo = 200;
