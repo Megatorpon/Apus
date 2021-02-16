@@ -136,3 +136,23 @@ Las issues que se han añadido en este hito del proyecto son las siguientes:
 [Añadir workflows al fichero de circleci](https://github.com/Megatorpon/Apus/issues/66)<br>
 [Actualizar documentación de circleci](https://github.com/Megatorpon/Apus/issues/67)<br>
 [Actualizar pasos con nuevas issues](https://github.com/Megatorpon/Apus/issues/68)<br>
+
+## Hito 5 - Despliegue serverless
+
+Este hito se basa en el despliegue en plataformas serverless de algunas funciones de nuestro proyecto. Se ha decidido utilizar para este objetivo tanto Vercel como Netlify, implementando dos funciones diferentes, una para cada una.
+
+Para comenzar a utilizar estos servicios hemos tenido que ir a sus páginas webs correspondientes y registrarnos, lo cual es bastante sencillo teniendo en cuenta que podemos logearnos con Github directamente en ambos. Después de completar el registro, hemos importado el repositorio del proyecto de la asignatura en ambas plataformas para permitir su correcto despliegue. El siguiente paso es instalar el SDK de Vercel y el SDK de Netlify por medio del gestor de paquetes de node, npm, usando las órdenes `npm i -g vercel` y `npm i -g install netlify-cli`. Tras seguir los pasos de cada una y haber acabado la configuración y despliegue del proyecto, se comprobó el funcionamiento por medio de funciones de prueba. Una vez verificado, era hora de comenzar a programar las verdaderas funciones.
+
+Para la función de Vercel se decidió implementar la [HU02](https://github.com/Megatorpon/Apus/issues/5), que consiste en que el usuario pueda recibir una dieta dependiendo de su objetivo. Esto se logró utilizando un [fichero .json](https://github.com/Megatorpon/Apus/blob/main/api/datos_dietas.json), que contiene los datos de consejos alimentarios, y de un [fichero js](https://github.com/Megatorpon/Apus/blob/main/api/dieta_recomendada.js) que devuelve consejos dependiendo del objetivo que se haya pasado como parámetro.
+
+Por otro lado, la función de Netlify implementa la [HU04](https://github.com/Megatorpon/Apus/issues/19), que consiste en que el usuario reciba una rutina de entrenamiento también dependiendo de su objetivo a largo plazo. Similarmente a la función de Vercel, también se utilizaron dos ficheros, un [json](https://github.com/Megatorpon/Apus/blob/main/functions/datos.json) y un [.js](https://github.com/Megatorpon/Apus/blob/main/functions/rutina.js). La principal diferencia que posee la función de Vercel con la de Netlify es que para esta última se decidió utilizar un [bot](t.me/RutinasApusBot) de Telegram que la integrara como funcionamiento por medio de un webhook una vez que ya estuviese acabada y funcional.
+
+[Añadir documentación de Vercel y Netlify](https://github.com/Megatorpon/Apus/issues/69)<br>
+[Subir función de prueba de Vercel](https://github.com/Megatorpon/Apus/issues/70)<br>
+[Añadir función de prueba de Netlify](https://github.com/Megatorpon/Apus/issues/71)<br>
+[Añadir archivos para la función serverless para el bot de Telegram](https://github.com/Megatorpon/Apus/issues/72)<br>
+[Pruebas diferentes json](https://github.com/Megatorpon/Apus/issues/73)<br>
+[Añadir json para función de Vercel](https://github.com/Megatorpon/Apus/issues/74)<br>
+[Completar función serverless de Vercel](https://github.com/Megatorpon/Apus/issues/75)<br>
+[Actualizar Readme](https://github.com/Megatorpon/Apus/issues/76)<br>
+[Actualizar pasos](https://github.com/Megatorpon/Apus/issues/77)<br>
