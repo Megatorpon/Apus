@@ -1,139 +1,111 @@
 {
-	"videojuegos":[
-		{
-			"nombreVideojuego":"FIFA",
-			"descuento":0.3,
-			"fechaLanzamiento":"2021-03-15",
-			"precioInicial":70,
-			"puntos": 11
-		},
+  "rutinas":{
+      "0":{
+        "nombre":"Rutina general",
+        "objetivo":"Definir",
+        "dias_semana":5,
+        "ejercicios":[
+          {
+            "nombre_ej":"Press banca",
+            "musculoPrincipal":"Pecho"
+          },
+          {
+            "nombre_ej":"Curl de biceps",
+            "musculoPrincipal":"Biceps"
+          },
+          {
+            "nombre_ej":"Aperturas inclinadas",
+            "musculoPrincipal":"Pecho"
+          },
+          {
+            "nombre_ej":"Peso muerto rumano",
+            "musculoPrincipal":"General"
+          },
+          {
+            "nombre_ej":"Prensa",
+            "musculoPrincipal":"Cuádriceps"
+          }
+        ]
+      },
 
-		{
-			"nombreVideojuego":"COD",
-			"descuento":0.0,
-			"fechaLanzamiento":"2020-12-23",
-			"precioInicial":60,
-			"puntos": 6
-		},
+      "1":{
+        "nombre":"Rutina vitónica PG",
+        "objetivo":"Adelgazar",
+        "dias_semana":4,
+        "ejercicios":[
+          {
+            "nombre_ej":"Sentadillas",
+            "musculoPrincipal":"Piernas"
+          },
+          {
+            "nombre_ej":"Press banca",
+            "musculoPrincipal":"Pecho"
+          },
+          {
+            "nombre_ej":"Dominadas",
+            "musculoPrincipal":"Espalda"
+          },
+          {
+            "nombre_ej":"Burpees",
+            "musculoPrincipal":"General"
+          },
+          {
+            "nombre_ej":"Correr",
+            "musculoPrincipal":"Cardio"
+          },
+        ]
+      },
 
-		{
-			"nombreVideojuego":"FORTNITE",
-			"descuento":0.2,
-			"fechaLanzamiento":"2020-12-15",
-			"precioInicial":20,
-			"puntos": 14
-		},
+      "2":{
+        "nombre":"Muscular Foodspring",
+        "objetivo":"Volumen",
+        "dias_semana":3,
+        "ejercicios":[
+          {
+            "nombre_ej":"Press militar",
+            "musculoPrincipal":"Hombros"
+          },
+          {
+            "nombre_ej":"Peso muerto",
+            "musculoPrincipal":"General"
+          },
+          {
+            "nombre_ej":"Press banca",
+            "musculoPrincipal":"Pecho"
+          },
+          {
+            "nombre_ej":"Sentadillas",
+            "musculoPrincipal":"Piernas"
+          }
+        ]
+      },
 
-		{
-			"nombreVideojuego":"LOL",
-			"descuento":0.0,
-			"fechaLanzamiento":"2021-07-10",
-			"precioInicial":50,
-			"puntos": 13
-		},
-
-		{
-			"nombreVideojuego":"OVERWATCH",
-			"descuento":0.0,
-			"fechaLanzamiento":"2021-03-20",
-			"precioInicial":20,
-			"puntos": 0
-		},
-
-		{
-			"nombreVideojuego":"GTA",
-			"descuento":0.4,
-			"fechaLanzamiento":"2021-02-17",
-			"precioInicial":40,
-			"puntos": 15
-		}
-	],
-
-
-	"clientes":[
-		{
-			"nombre":"Bilal",
-			"codigo":0,
-			"videojuegosComprados":[
-				{
-					"nombreVideojuego":"FIFA",
-					"descuento":0.3,
-					"fechaLanzamiento":"2021-03-15",
-					"precioInicial":70,
-					"puntos": 11
-				},
-
-				{
-					"nombreVideojuego":"GTA",
-					"descuento":0.4,
-					"fechaLanzamiento":"2021-02-17",
-					"precioInicial":40,
-					"puntos": 15
-				},
-
-				{
-					"nombreVideojuego":"COD",
-					"descuento":0.0,
-					"fechaLanzamiento":"2020-12-23",
-					"precioInicial":60,
-					"puntos": 6
-				}
-			]
-		},
-
-
-		{
-			"nombre":"JJ",
-			"codigo":1,
-			"videojuegosComprados":[
-				{
-					"nombreVideojuego":"OVERWATCH",
-					"descuento":0.0,
-					"fechaLanzamiento":"2021-03-20",
-					"precioInicial":20,
-					"puntos": 0
-				}
-			]
-		},
-
-
-		{
-			"nombre":"Mario",
-			"codigo":2,
-			"videojuegosComprados":[
-				{
-					"nombreVideojuego":"GTA",
-					"descuento":0.4,
-					"fechaLanzamiento":"2021-02-17",
-					"precioInicial":40,
-					"puntos": 15
-				}
-
-			]
-		},
-
-
-		{
-			"nombre":"Raúl",
-			"codigo":3,
-			"videojuegosComprados":[
-				{
-					"nombreVideojuego":"FORTNITE",
-					"descuento":0.2,
-					"fechaLanzamiento":"2020-12-15",
-					"precioInicial":20,
-					"puntos": 14
-				},
-
-				{
-					"nombreVideojuego":"LOL",
-					"descuento":0.0,
-					"fechaLanzamiento":"2021-07-10",
-					"precioInicial":50,
-					"puntos": 13
-				}
-
-			]
-		}
-	]
+      "3":{
+        "nombre":"HIIT",
+        "objetivo":"Resistencia",
+        "dias_semana":3,
+        "ejercicios":[
+          {
+            "nombre_ej":"Skipping",
+            "musculoPrincipal":"Cardio"
+          },
+          {
+            "nombre_ej":"Jumping Jacks",
+            "musculoPrincipal":"Cardio"
+          },
+          {
+            "nombre_ej":"Sentadillas saltando",
+            "musculoPrincipal":"Cardio"
+          },
+          {
+            "nombre_ej":"Rodillas arriba",
+            "musculoPrincipal":"Cardio"
+          },
+          {
+            "nombre_ej":"Zancadas saltando",
+            "musculoPrincipal":"Cardio"
+          }
+        ]
+      }
+  }
 }
