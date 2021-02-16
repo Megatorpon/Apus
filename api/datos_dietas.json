@@ -2,20 +2,20 @@
   "consejos_dieta":{
     "0":{
       "objetivo":"Adelgazar",
-      "a_mejorar":"Comer huevos en el desayuno, una pieza de fruta todos los dias, beber agua, consumir más proteínas, beber café negro",
-      "a_evitar":"azúcares agregados, menos carbohidratos, refrescos, calorías abundantes"
+      "a_mejorar":"Comer huevos en el desayuno, una pieza de fruta todos los dias, beber agua, consumir mas proteinas, beber cafe negro",
+      "a_evitar":"azucares agregados, menos carbohidratos, refrescos, calorias abundantes"
     },
 
     "1":{
       "objetivo":"Volumen",
-      "a_mejorar":"Comer 5 o 6 veces al día, reducir cardio, añadir grasas esenciales, alimentos que aceleran metabolismo",
-      "a_evitar":"comer pocas calorías, proteínas de mala calidad, alimentos no saludables"
+      "a_mejorar":"Comer 5 o 6 veces al dia, reducir cardio, aniadir grasas esenciales, alimentos que aceleran metabolismo",
+      "a_evitar":"comer pocas calorias, proteinas de mala calidad, alimentos no saludables"
     },
 
     "2":{
       "objetivo":"Saludable",
-      "a_mejorar":"4-5 comidas al día, 2 litros de agua al día, 3-5 legumbres a la semana, desayuno equilibrado",
-      "a_evitar":"sal excesiva, grasa excesiva, azúcar excesivo, alcohol, bebidas dulces"
+      "a_mejorar":"4-5 comidas al dia, 2 litros de agua al dia, 3-5 legumbres a la semana, desayuno equilibrado",
+      "a_evitar":"sal excesiva, grasa excesiva, azucar excesivo, alcohol, bebidas dulces"
     }
   }
 }

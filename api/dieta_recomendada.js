@@ -8,8 +8,8 @@ function consejosDieta(objetivo){
   for (let i = 0; i < n_dietas && !encontrado; ++i){
     if (data["consejos_dieta"][i]["objetivo"] == objetivo){
       encontrado = true;
-      consejo = "Para mejorar podrías " + data["consejos_dieta"][i]["a_mejorar"];
-      consejo += ". Por otro lado, deberías evitar " + data["consejos_dieta"][i]["a_evitar"];
+      consejo = "Para mejorar podrias " + data["consejos_dieta"][i]["a_mejorar"];
+      consejo += ". Por otro lado, deberias evitar " + data["consejos_dieta"][i]["a_evitar"];
     }
   }
 
@@ -26,7 +26,7 @@ module.exports = (req, res) => {
   }
 
   else if (objetivo != 'Adelgazar' && objetivo != 'Volumen' && objetivo != 'Saludable'){
-    resultado = "Por favor, indique un objetivo válido";
+    resultado = "Por favor, indique un objetivo valido";
     codigo = 400;
   }
 
@@ -39,5 +39,4 @@ module.exports = (req, res) => {
     objetivo: objetivo,
     consejo: resultado
   }))
-
 }
