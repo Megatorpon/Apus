@@ -1,19 +1,19 @@
-const rutinas = require('./data.json');
+const data = require('./data.json');
 
 function rutinaRecomendada(objetivo){
   let encontrado = false;
   let cadena = "";
 
-  for (let i = 0; i < rutinas["rutinas"].length && !encontrado; ++i){
-    if (rutinas["rutinas"][i]["objetivo"] == objetivo){
+  for (let i = 0; i < data["rutinas"].length && !encontrado; ++i){
+    if (data["rutinas"][i]["objetivo"] == objetivo){
       encontrado = true;
-      cadena = "Nombre: " + rutinas["rutinas"][i]["nombre"] + "\n" +
-               "Objetivo: " + rutinas["rutinas"][i]["objetivo"] + "\n" +
-               "Número de días: " + rutinas["rutinas"][i]["dias_semana"] + "\n" +
+      cadena = "Nombre: " + data["rutinas"][i]["nombre"] + "\n" +
+               "Objetivo: " + data["rutinas"][i]["objetivo"] + "\n" +
+               "Número de días: " + data["rutinas"][i]["dias_semana"] + "\n" +
                "Ejercicios: " + "\n";
 
-      for (let ej = 0; ej < rutinas["rutinas"][i]["ejercicios"].length; ++ej){
-        cadena += rutinas["rutinas"][i]["ejercicios"][ej] + "\n";
+      for (let ej = 0; ej < data["rutinas"][i]["ejercicios"].length; ++ej){
+        cadena += data["rutinas"][i]["ejercicios"][ej] + "\n";
       }
     }
   }
