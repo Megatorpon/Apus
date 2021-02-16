@@ -28,7 +28,7 @@ Como ya aprendimos con los ejercicios de autoevaluación, el siguiente paso es i
 
 ## Función de ejemplo
 
-Para comprobar que todo funciona correctamente, usaremos una función de ejemplo que nos proporciona la propia [página](https://vercel.com/docs/serverless-functions/supported-languages#supported-languages) de Vercel. Tras haberla incluido en nuestro proyecto, dentro de la carpeta api situada en la raiz, haremos un push. Para testear que funciona, debemos utilizar la URL que nos da Vercel para nuestro proyecto y añadirle al final "/api/helloworld.js". Podemos acceder directamente desde este [enlace](https://apus.vercel.app/api/helloworld.js)
+Para comprobar que todo funciona correctamente, usaremos una función de ejemplo que nos proporciona la propia [página](https://vercel.com/docs/serverless-functions/supported-languages#supported-languages) de Vercel. Tras haberla incluido en nuestro proyecto, dentro de la carpeta api situada en la raiz, haremos un push. Para testear que funciona, debemos utilizar la URL que nos da Vercel para nuestro proyecto y añadirle al final "/api/helloworld.js". Podemos acceder directamente desde este [enlace](https://apus.vercel.app/api/helloworld.js).
 
 ![vercel_hello](https://github.com/Megatorpon/Apus/blob/main/docs/img/vercel_hello.png)
 
