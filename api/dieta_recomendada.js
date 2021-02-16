@@ -38,5 +38,5 @@ module.exports = (req, res) => {
   res.status(codigo).send(JSON.stringify({
     objetivo: objetivo,
     consejo: resultado
-  }).concat("\n"))
+  }).concat('\n'))
 }
