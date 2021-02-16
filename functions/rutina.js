@@ -4,7 +4,9 @@ function rutinaRecomendada(objetivo){
   let encontrado = false;
   let cadena = "";
 
+
   for (let i = 0; i < data["rutinas"].length && !encontrado; ++i){
+    console.log(data["rutinas"][i]["objetivo"]);
     if (data["rutinas"][i]["objetivo"] == objetivo){
       encontrado = true;
       cadena = "Nombre: " + data["rutinas"][i]["nombre"] + "\n" +
