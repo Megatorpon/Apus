@@ -1,4 +1,4 @@
-const data = require('./data.json');
+const data = require('./datos.json');
 
 function rutinaRecomendada(objetivo){
   let encontrado = false;
