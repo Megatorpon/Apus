@@ -153,6 +153,18 @@ steps:
 
 Sobre el uso de estos sistemas de integración continua podemos encontrar más información en el apartado de información adicional, al pie del README.
 
+## Despliegue serverless
+
+Para este proyecto se han utilizado tanto Vercel como Netlify como plataformas de despliegue para funciones. Estas funciones se han desarrollado integrando algunas de las historias de usuario que había pendientes, concretamente la [HU02](https://github.com/Megatorpon/Apus/issues/5) para la [función de Vercel](https://github.com/Megatorpon/Apus/tree/main/api) y la [HU04](https://github.com/Megatorpon/Apus/issues/19) para la [función de Netlify](https://github.com/Megatorpon/Apus/tree/main/functions).
+
+Tanto la conexión como el desarrollo de dichas funciones para ambas plataformas está documentado en los siguientes enlaces.
+
+[Vercel](https://github.com/Megatorpon/Apus/blob/main/docs/serverless/vercel.md) --> [Función de Vercel](https://github.com/Megatorpon/Apus/blob/main/docs/serverless/funcion_vercel.md)
+
+[Netlify](https://github.com/Megatorpon/Apus/blob/main/docs/serverless/netlify.md) --> [Función de Netlify](https://github.com/Megatorpon/Apus/blob/main/docs/serverless/funcion_netlify.md)
+
+Además, para la función de Netlify se ha implementado una integración con un bot de Telegram por medio de un sencillo webhook, que transmitirá información dependiendo del comando recibido. Este bot está [disponible](t.me/RutinasApusBot) en cualquier momento para su testeo y uso.
+
 ## Información adicional
 ___
 
