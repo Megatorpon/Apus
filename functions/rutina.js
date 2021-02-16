@@ -1,66 +1,93 @@
-const data = require('./data.json');
+// Importamos el archivo .json
 
-function rutinaRecomendada(objetivo){
-  let encontrado = false;
-  let cadena = "";
+const info = require('./info.json');
 
-  for (let i = 0; i < data["rutinas"].length && !encontrado; ++i){
-    if (data["rutinas"][i]["objetivo"] == objetivo){
-      encontrado = true;
-      cadena = "Nombre: " + data["rutinas"][i]["nombre"] + "\n" +
-               "Objetivo: " + data["rutinas"][i]["objetivo"] + "\n" +
-               "Número de días: " + data["rutinas"][i]["dias_semana"] + "\n" +
-               "Ejercicios: " + "\n";
 
-      for (let ej = 0; ej < data["rutinas"][i]["ejercicios"].length; ++ej){
-        cadena += data["rutinas"][i]["ejercicios"][ej] + "\n";
-      }
-    }
-  }
+// Función que te busca los puntos de un usuario concreto
 
-  if (!encontrado){
-    cadena = "No se ha encontrado una rutina apta para su objetivo. ¿Lo ha escrito correctamente?";
-  }
+function calcularPuntos(nombre){
+	var encontrado = false;
+	cadena = ""
+	let suma = 0;
 
-  return cadena;
+	for (let i = 0; i < info["clientes"].length && !encontrado; i++){
+		if (info["clientes"][i]["nombre"] == nombre){
+			for (let j = 0; j < info["clientes"][i]["videojuegosComprados"].length; j++){
+				suma += info["clientes"][i]["videojuegosComprados"][j]["puntos"];
+			}
+
+			encontrado = true
+		}
+	}
+
+
+	if (encontrado){
+		cadena = "El cliente " + nombre + " tiene " + suma + " puntos acumulados.";
+	}
+
+	else{
+		cadena = "No existe el cliente " + nombre;
+	}
+
+
+	return cadena;
+
 }
 
-exports.handler = async function(event, context) {
-  let body = JSON.parse(event.body);
-  let {chat, msg} = body.message;
-  var chat_id = chat.id;
-  let cadena = "";
 
-  switch(msg){
-    case "/definir":
-      cadena = rutinaRecomendada("Definir");
-      break;
-    case "/adelgazar":
-      cadena = rutinaRecomendada("Adelgazar");
-      break;
-    case "/volumen":
-      cadena = rutinaRecomendada("Volumen");
-      break;
-    case "/resistencia":
-      cadena = rutinaRecomendada("Resistencia");
-      break;
-    default:
-      cadena = "Para obtener una rutina según el objetivo que desee, deberá elegir entre las opciones que se le presentan a continuación\n";
-      cadena += "/definir\n";
-      cadena += "/adelgazar\n";
-      cadena += "/volumen\n";
-      cadena += "/resistencia\n";
-  }
+exports.handler = async function (event){
 
-  return {
-    statusCode: 200,
-    headers:{
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      text: cadena,
-      method: 'sendMessage',
-      chat_id: chat_id
-    })
-  };
+	// Obtenemos el cuerpo del mensaje, y lo separamos en el chat y en el texto enviado
+	let msg = JSON.parse(event.body);
+	let text = msg.message.text;
+	let chat_id = msg.message.chat.id;
+	let cadena = "";
+
+	// Establecemos casos para cada comando enviado
+
+	if (text == "/puntos"){
+		cadena = "¿Bilal? ¿JJ? ¿Mario? ¿Raúl? ¿Qué clientes quieres consultar?";
+		cadena += "\n";
+		cadena += "Por ejemplo, /puntosBilal";
+	}
+
+	else if (text == "/puntosBilal"){
+		cadena = calcularPuntos("Bilal");
+	}
+
+	else if (text == "/puntosJJ"){
+		cadena = calcularPuntos("JJ");
+	}
+
+	else if (text == "/puntosMario"){
+		cadena = calcularPuntos("Mario");
+	}
+
+	else if (text == "/puntosRaúl" || text == "/puntosRaul"){
+		cadena = calcularPuntos("Raúl");
+	}
+
+	else{
+		cadena = "Para usar el bot PUNTOS utilice el comando /puntos.";
+		cadena += "\n"
+		cadena += "Por ejemplo, /puntosJJ para saber los puntos que tiene acumulados JJ";
+		cadena += "\n"
+		cadena += "También puedes probar con: \n";
+		cadena += "---> /puntosBilal";
+		cadena += "\n";
+		cadena += "---> /puntosMario";
+		cadena += "\n";
+		cadena += "---> /puntosRaul";
+	}
+
+
+	// A devolver en Netlify expecificando el texto, el chat y el método
+	return {
+		statusCode: 200,
+		body: JSON.stringify({text: cadena, method: 'sendMessage', chat_id:chat_id}),
+		headers:{
+			'Content-Type': 'application/json'
+		}
+	};
+
 }
