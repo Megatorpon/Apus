@@ -3,9 +3,9 @@ const data = require('./datos.json');
 function rutinaRecomendada(objetivo){
   let encontrado = false;
   let cadena = "";
+  let n_rutinas = Object.keys(data["rutinas"]).length
 
-  console.log(data["rutinas"].length)
-  for (let i = 0; i < data["rutinas"].length && !encontrado; ++i){
+  for (let i = 0; i < n_rutinas && !encontrado; ++i){
     if (data["rutinas"][i]["objetivo"] == objetivo){
       encontrado = true;
       cadena = "Nombre: " + data["rutinas"][i]["nombre"] + "\n" +
