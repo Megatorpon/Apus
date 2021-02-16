@@ -1,6 +1,6 @@
 // Importamos el archivo .json
 
-const info = require('./info.json');
+const info = require('./data.json');
 
 
 // Función que te busca los puntos de un usuario concreto
