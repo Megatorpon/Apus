@@ -14,7 +14,8 @@ function rutinaRecomendada(objetivo){
                "Ejercicios: " + "\n";
 
       for (let ej = 0; ej < data["rutinas"][i]["ejercicios"].length; ++ej){
-        cadena += data["rutinas"][i]["ejercicios"][ej] + "\n";
+        cadena += data["rutinas"][i]["ejercicios"][ej]["nombre_ej"] + " --> " +
+                  data["rutinas"][i]["ejercicios"][ej]["musculoPrincipal"] + "\n";
       }
     }
   }
