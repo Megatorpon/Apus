@@ -2,15 +2,9 @@
 language: node_js
 # Se indican las versiones en las que se va a testear
 node_js:
-  - 10
-  - 12
-  - 14
-  - 15
-
-before_install:
-  - npm install -g jest grunt
+  - "14"
 
 # Ejecutamos la imagen con la orden adecuada (presente en el README del proyecto)
 script:
-  - npm start
-  - grunt test
+  - npm install
+  - npm test
