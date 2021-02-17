@@ -1,6 +1,7 @@
 const diaEntreno = require('./diaEntreno');
 const assert = require('assert');
 
+
 class Rutina {
 
 	constructor(nombre, tipo){

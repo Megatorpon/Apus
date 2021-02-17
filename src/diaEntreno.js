@@ -1,6 +1,7 @@
 const ejercicio = require('./ejercicio.js');
 const assert = require('assert');
 
+
 class DiaEntreno {
 
 	constructor(numero_dia){

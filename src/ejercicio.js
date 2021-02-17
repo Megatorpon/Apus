@@ -1,5 +1,6 @@
 class Ejercicio {
 
+
 	constructor(nombre = "", num_series = 0, num_repes = 0, grupo_muscular = "") {
 		this.nombre = nombre;
 		this.num_series = num_series;

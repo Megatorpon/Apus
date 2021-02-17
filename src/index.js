@@ -4,6 +4,7 @@ const Ejercicio = require('./ejercicio.js');
 const DiaEntreno = require('./diaEntreno.js');
 const file = require('../data/numbers.json')
 
+
 // Importamos las librerías que vamos a utilizar
 const fs = require('fs')
 const os = require('os')
