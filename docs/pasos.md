@@ -177,4 +177,5 @@ Las issues que se han añadido en este hito del proyecto son las siguientes:
 [Documentación sobre la comparación de los distintos frameworks](https://github.com/Megatorpon/Apus/issues/83)<br>
 [Documentación sobre los tests que se han incluido](https://github.com/Megatorpon/Apus/issues/84)<br>
 [Explicación del fichero principal del framework](https://github.com/Megatorpon/Apus/issues/85)<br>
-[Actualización de las clases utilizadas para trabajar](https://github.com/Megatorpon/Apus/issues/86)<br>
+[Implementación de framework y actualización de clases](https://github.com/Megatorpon/Apus/issues/86)<br>
+[Añadir fichero para número de rutinas totales](https://github.com/Megatorpon/Apus/issues/87)<br>
