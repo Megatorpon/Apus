@@ -1,4 +1,5 @@
 entidad:
+  - src/database.js
   - src/rutina.js
   - src/diaEntreno.js
   - src/ejercicio.js
@@ -6,6 +7,7 @@ entidad:
 lenguaje: javascript
 test:
   - test/rutina.test.js
+  - test/rutas.test.js
 taskfile: Gruntfile.js
 make: grunt
 URL: https://apus.vercel.app/api/dieta_recomendada.js?objetivo=Volumen
