@@ -11,7 +11,7 @@ describe("Testing class Rutina", () => {
       expect(rutin.nombre).toBe("Primera rutina");
       expect(rutin.tipo).toBe("Full body");
       expect(rutin.training_days.length).toBe(0);
-      expect(rutin.num_days).toBe(0);
+      expect(rutin.num_dias).toBe(0);
     });
   });
 
@@ -40,7 +40,7 @@ describe("Testing class Rutina", () => {
     describe("Testing method getNumDias()", () => {
       test("Se obtiene el número de días de entrenamiento de la rutina", () => {
           num_days = rutin.getNumDias();
-          expect(num_days).toBe(rutin.num_days);
+          expect(num_days).toBe(rutin.num_dias);
       });
     });
   });
@@ -95,11 +95,11 @@ describe("Testing class Rutina", () => {
       new_rutin.setNumDias(2);
 
       test("Se comprueba que el argumento sea un número", () => {
-        expect(typeof new_rutin.num_days).toBe('number');
+        expect(typeof new_rutin.num_dias).toBe('number');
       });
 
       test("Se añade el número de días correctamente", () => {
-        expect(new_rutin.num_days).toBe(2);
+        expect(new_rutin.num_dias).toBe(2);
       });
     });
   });
@@ -158,7 +158,7 @@ describe("Testing class Rutina", () => {
 
       expect(resultado[0]).toBe(rutin.nombre);
       expect(resultado[1]).toBe(rutin.tipo);
-      expect(resultado[2]).toBe(rutin.num_days);
+      expect(resultado[2]).toBe(rutin.num_dias);
       expect(resultado[3]).toStrictEqual(rutin.training_days);
     });
   });
@@ -170,7 +170,7 @@ describe("Testing class Rutina", () => {
       expect(rutin.nombre).toBe("");
       expect(rutin.tipo).toBe("");
       expect(rutin.training_days.length).toBe(0);
-      expect(rutin.num_days).toBe(0);
+      expect(rutin.num_dias).toBe(0);
     });
   });
 
