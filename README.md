@@ -165,6 +165,24 @@ Tanto la conexión como el desarrollo de dichas funciones para ambas plataformas
 
 Además, para la función de Netlify se ha implementado una integración con un bot de Telegram por medio de un sencillo webhook, que transmitirá información dependiendo del comando recibido. Este bot está [disponible](t.me/RutinasApusBot) en cualquier momento para su testeo y uso.
 
+## Microservicio
+
+**Rúbrica 1**
+Para construir el microservicio de nuestra aplicación, se ha elegido ExpressJS. En este [fichero](https://github.com/Megatorpon/Apus/blob/main/docs/microservicio/framework_elegido.md) se han barajado las diferentes ventajas y desventajas de cada uno y, con respecto a estas, se ha tomado la decisión de que Express es el más adecuado para nuestro proyecto.
+
+**Rúbricas 2-3**
+La API se basa en la implementación de la [HU01](https://github.com/Megatorpon/Apus/issues/4), con la que el usuario podrá introducir una rutina personalizada a su gusto en la base de datos. A continuación se incluyen tanto los ficheros fuente que se han utilizado como la documentación correspondiente.
+
+- [Fichero principal](https://github.com/Megatorpon/Apus/blob/main/src/index.js)
+- [Clase Rutina](https://github.com/Megatorpon/Apus/blob/main/src/rutina.js)
+- [Clase DiaEntreno](https://github.com/Megatorpon/Apus/blob/main/src/diaEntreno.js)
+- [Clase Ejercicio](https://github.com/Megatorpon/Apus/blob/main/src/ejercicio.js)
+
+**Rúbrica 4**
+También se ha añadido a nuestro proyecto una serie de tests que se encargan de asegurarse que el nuevo código implementado funciona correctamente. Tanto los tests como su documentación se pueden visitar aquí:
+- [Fichero de tests](https://github.com/Megatorpon/Apus/blob/main/test/rutas.test.js)
+- [Documentación](https://github.com/Megatorpon/Apus/blob/main/docs/microservicio/tests.md)
+
 ## Información adicional
 ___
 
