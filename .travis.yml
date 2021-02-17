@@ -7,9 +7,8 @@ node_js:
   - 14
   - 15
 
-# Hacemos pull de la imagen de testing de nuestro proyecto
 before_install:
   - npm install -g jest grunt
 
 # Ejecutamos la imagen con la orden adecuada (presente en el README del proyecto)
-script: grunt test
+script: npm run lint
