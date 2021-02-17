@@ -147,6 +147,8 @@ Para la función de Vercel se decidió implementar la [HU02](https://github.com/
 
 Por otro lado, la función de Netlify implementa la [HU04](https://github.com/Megatorpon/Apus/issues/19), que consiste en que el usuario reciba una rutina de entrenamiento también dependiendo de su objetivo a largo plazo. Similarmente a la función de Vercel, también se utilizaron dos ficheros, un [json](https://github.com/Megatorpon/Apus/blob/main/functions/datos.json) y un [.js](https://github.com/Megatorpon/Apus/blob/main/functions/rutina.js). La principal diferencia que posee la función de Vercel con la de Netlify es que para esta última se decidió utilizar un [bot](t.me/RutinasApusBot) de Telegram que la integrara como funcionamiento por medio de un webhook una vez que ya estuviese acabada y funcional.
 
+Las issues que se han añadido en este hito del proyecto son las siguientes:
+
 [Añadir documentación de Vercel y Netlify](https://github.com/Megatorpon/Apus/issues/69)<br>
 [Subir función de prueba de Vercel](https://github.com/Megatorpon/Apus/issues/70)<br>
 [Añadir función de prueba de Netlify](https://github.com/Megatorpon/Apus/issues/71)<br>
@@ -156,3 +158,23 @@ Por otro lado, la función de Netlify implementa la [HU04](https://github.com/Me
 [Completar función serverless de Vercel](https://github.com/Megatorpon/Apus/issues/75)<br>
 [Actualizar Readme](https://github.com/Megatorpon/Apus/issues/76)<br>
 [Actualizar pasos](https://github.com/Megatorpon/Apus/issues/77)<br>
+
+## Hito 6 - Microservicios
+
+Este hito se basa en la integración de un microservicio en nuestra aplicación.
+
+Como cada vez que se desea añadir alguna funcionalidad nueva a nuestro proyecto, debemos documentarnos e informarnos sobre la opción más adecuada. Este hito no es la excepción y por lo tanto, lo primero que se ha realizado es la búsqueda de información sobre diferentes frameworks que sean compatibles con nuestra aplicación. Tras indagar bastante en internet y haber realizado la [comparación](https://github.com/Megatorpon/Apus/blob/main/docs/microservicio/framework_elegido.md) entre 3 frameworks diferentes que son muy utilizados, finalmente nos hemos decantado por Express. Las razones se explican en el documento del enlace.
+
+Tras haber elegido y haber aprendido lo básico del uso de Express, se ha comenzado a integrar. El objetivo de esta integración ha sido la implementación completa de la [HU01](https://github.com/Megatorpon/Apus/issues/4), que establece que como usuario, se desea añadir a la base de datos una rutina completamente personalizada. Como base de datos se ha utilizado etcd3 además de un fichero en el que se guardan el número de rutinas presentes hasta el momento.
+
+Una vez declaradas las diferentes rutas y funcionalidades cuyo objetivo es la historia de usuario mencionada, se han implementado tests para testearlas y asegurarse de que funcionan como es debido.
+
+Las issues que se han añadido en este hito del proyecto son las siguientes:
+
+[Actualización del fichero de pasos](https://github.com/Megatorpon/Apus/issues/80)<br>
+[Actualización del readme con las nuevas implementaciones](https://github.com/Megatorpon/Apus/issues/81)<br>
+[Implementación de tests para testeo de las rutas](https://github.com/Megatorpon/Apus/issues/82)<br>
+[Documentación sobre la comparación de los distintos frameworks](https://github.com/Megatorpon/Apus/issues/83)<br>
+[Documentación sobre los tests que se han incluido](https://github.com/Megatorpon/Apus/issues/84)<br>
+[Explicación del fichero principal del framework](https://github.com/Megatorpon/Apus/issues/85)<br>
+[Actualización de las clases utilizadas para trabajar](https://github.com/Megatorpon/Apus/issues/86)<br>
