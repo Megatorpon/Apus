@@ -20,4 +20,4 @@ ENV PATH=/node_modules/.bin:$PATH
 WORKDIR /test
 
 # Se ejecutan los comandos para lanzar los tests con grunt
-CMD ["grunt", "testing"]
+CMD ["grunt", "test"]
