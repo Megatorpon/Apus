@@ -64,6 +64,12 @@ class DiaEntreno {
 		this.ejercicios = [];
 		this.completado = false;
 	}
+
+	copy(otro_dia){
+		this.numero = otro_dia.numero;
+		this.ejercicios = otro_dia.ejercicios;
+		this.completado = otro_dia.completado;
+	}
 }
 
 

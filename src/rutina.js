@@ -7,11 +7,11 @@ class Rutina {
 		this.initialize(nombre, tipo);
 	}
 
-	initialize(nombre = "", tipo = "", tr_days = [], num_days = 0){
+	initialize(nombre = "", tipo = "", num_days = 0, tr_days = []){
 		this.nombre = nombre;
 		this.tipo = tipo;
 		this.training_days = tr_days;
-		this.num_days = num_days;
+		this.num_dias = num_days;
 	}
 
 	getNombre(){
@@ -39,17 +39,32 @@ class Rutina {
 	}
 
 	getNumDias(){
-		return this.num_days;
+		return this.num_dias;
 	}
 
 	setNumDias(num_dias){
-		this.num_days = num_dias;
+		this.num_dias = num_dias;
 	}
 
 	agregaDiaEntreno(numero_dia){
 		let nuevo_dia = new diaEntreno(numero_dia);
-		this.training_days.push(nuevo_dia);
-		this.num_days += 1;
+		let salir = false
+
+		for (let i = 0; i < this.training_days.length && !salir; ++i){
+			if (this.training_days[i].numero == numero_dia){
+				salir = true
+			}
+		}
+
+		if (!salir){
+			this.training_days.push(nuevo_dia);
+		}
+
+		if (this.training_days.length >= this.num_dias) {
+			this.num_dias += 1;
+		}
+
+		return salir;
 	}
 
 	establecerEjsDiaEntreno(index, ejercicios){
@@ -113,6 +128,16 @@ class Rutina {
 
 	aniadeProgresoDia(num_dia, num_ej, max_peso){
 		this.training_days[num_dia].aniadeProgreso(num_ej, max_peso);
+	}
+
+	copy(otra_rutina){
+		this.nombre = otra_rutina.nombre;
+		this.tipo = otra_rutina.tipo;
+		this.num_dias = otra_rutina.num_dias;
+
+		if (otra_rutina.training_days != null){
+			this.training_days = otra_rutina.training_days;
+		}
 	}
 }
 

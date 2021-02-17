@@ -1,16 +1,11 @@
 class Ejercicio {
 
-	constructor(id, nombre = "", num_series = 0, num_repes = 0, grupo_muscular = "") {
-		this.id = id;
+	constructor(nombre = "", num_series = 0, num_repes = 0, grupo_muscular = "") {
 		this.nombre = nombre;
 		this.num_series = num_series;
 		this.num_repes = num_repes;
 		this.grupo_muscular = grupo_muscular;
 		this.progreso = []
-	}
-
-	getId(){
-		return this.id;
 	}
 
 	getNombre(){
