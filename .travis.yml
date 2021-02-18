@@ -2,9 +2,4 @@
 language: node_js
 # Se indican las versiones en las que se va a testear
 node_js:
-  - "14"
-
-# Ejecutamos la imagen con la orden adecuada (presente en el README del proyecto)
-script:
-  - npm install
-  - npm test
+  - lts/*
