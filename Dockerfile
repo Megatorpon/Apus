@@ -1,43 +1,23 @@
+# Cargamos la imagen oficial de node para el contenedor
+FROM node:14.15.1-alpine3.12
 
-#usamos como sistema operativo alpine con la versión 3.10.5
-FROM alpine:3.10.5
+# Introducimos los metadatos del autor del contenedor
+LABEL version = "1.0" maintainer = "Pablo Pérez Méndez"
 
-#indicamos información sobre quién es la persona encargada del contenedor
-LABEL maintainer="Irene Cano Jerez"
+# Se copian los ficheros json al contenedor
+COPY package*.json ./
 
+# Instalamos las dependencias, limpiamos la cache y borramos los .json
+RUN npm install && npm i -g grunt-cli grunt-run grunt && npm cache clean --force && rm ./package*.json
 
-#creamos un usuario y una carpeta sobre la que tendrá permisos
-RUN adduser -S usuario
+## Cambiamos a un usuario sin privilegios
+USER node
 
-#permisos necesarios para el usuario e instalación de node, npm y grunt
-RUN mkdir node_modules \
-    && chown -R usuario node_modules \
-    && apk add --update nodejs npm make \
-    && npm i -g grunt-cli grunt-run
-
-#usuario sin privilegios
-USER usuario
-
-#copiamos el fichero de dependencias
-COPY package.json ./
-
-#instalamos las dependencias y borramos la caché de información de los paquetes
-RUN npm install && rm -rf /var/lib/apt/lists/*
-
-#necesitamos el usuario root para poder eliminar el fichero de dependencias
-USER root
-
-#eliminamos el fichero de dependencias una vez éstas se han instalado
-RUN rm package.json
-
-#volvemos al usuario sin privilegios
-USER usuario
-
-#variable de entorno para gestionar node_modules
+# Establecemos la variable de entorno de PATH a la carpeta node_modules
 ENV PATH=/node_modules/.bin:$PATH
 
-#creamos el directorio de trabajo /test
+# Establecemos el directorio de trabajo a /test
 WORKDIR /test
 
-#ejecutamos los tests con grunt, en concreto, con el comando 'grunt test'
-CMD ["grunt","test"]
+# Se ejecutan los comandos para lanzar los tests con grunt
+CMD ["grunt", "test"]

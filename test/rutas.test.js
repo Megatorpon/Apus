@@ -1,6 +1,5 @@
 const request = require('supertest');
 const file = require('../data/numbers.json')
-const express = require('express')
 app = require('../src/index.js');
 
 describe("POST /rutin", () => {

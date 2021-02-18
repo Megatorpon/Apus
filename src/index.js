@@ -17,6 +17,9 @@ const vm = require('vm');
 // Configuración inicial
 const app = express();
 const client = new Etcd3();
+const PORT = (process.env.PORT || 5000);
+const PID = process.pid;
+const HOST = os.hostname();
 app.set('appName', 'Apus')
 
 // Middlewares
@@ -246,5 +249,12 @@ app.get('/ej', getEjercicio);
 app.post('/rutin', setRutina);
 app.post('/diaEntreno', setDiaEntreno);
 app.post('/ej', setEjercicio);
+
+app.listen(PORT, () => {
+  console.log('App name:', app.get('appName'));
+  console.log('Host:', HOST);
+  console.log('Server on port', PORT);
+  console.log('Process PID', PID);
+});
 
 module.exports = app;
